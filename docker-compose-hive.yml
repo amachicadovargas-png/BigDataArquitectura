@@ -112,7 +112,7 @@ services:
       net_pet:
         ipv4_address: 172.27.1.9
         
- adminer:
+  adminer:
    image: adminer
    container_name: adminer
    restart: always
