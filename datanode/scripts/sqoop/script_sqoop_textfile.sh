@@ -18,7 +18,7 @@ sqoop import \
 --target-dir=/user/datapath/datasets/products \
 --delete-target-dir > /tmp/log_products.log
 
-sqoop import \
+# sqoop import \
 # --connect "jdbc:mysql://mysql:3306/retail_db" \
 # --username=root \
 # --password=root \
