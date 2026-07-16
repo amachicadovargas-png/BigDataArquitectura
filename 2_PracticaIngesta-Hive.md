@@ -78,6 +78,14 @@ En el terminal de hive-server ejecutamos
 ```     >_ USE retail_db;         ```   <br> 
 ```     >_SELECT p.product_name, SUM(oi.order_item_quantity * oi.order_item_product_price) AS total_ventas FROM order_items oi JOIN products p ON oi.order_item_product_id = p.product_id GROUP BY p.product_name ORDER BY total_ventas DESC LIMIT 10; ```   <br> 
 
+La respuesta puede ser guardada en la capa de procesamiento
+Para ello creamos una tabla externa: 
+```     >_CREATE EXTERNAL TABLE cleansed.top10_productos ( product_name STRING, total_ventas DOUBLE ) STORED AS PARQUET LOCATION '/cleansed/top10_productos'; ```   <br>
+
+Luego cargas los datos procesados 
+```     >_INSERT OVERWRITE TABLE cleansed.top10_productos SELECT p.product_name, SUM(oi.order_item_subtotal) AS total_ventas FROM order_items oi JOIN products p ON oi.order_item_product_id = p.product_id GROUP BY p.product_name ORDER BY total_ventas DESC LIMIT 10; ```   <br>
+
+
 #### ----------------------------- PRACTICA 2  -------------------------------------## 
 
 1 Descargar un set de datos en formato csv
