@@ -52,7 +52,7 @@ Validar los serviciso de la arquitectura
 
 ###  Exportar tablas de mysql - hdfs con sqoop
 Para exportar las tabla de la base de datos retail con sqoop ejecutar lo siguiente:<br>
-```     >_ sh /datanode/scripts/sqoop/script_sqoop_textfile.sh     ```<br>
+```     >_ sh /datanode/scripts/sqoop/script_sqoop_textfile_import.sh     ```<br>
 ```     >_ sh /datanode/scripts/sqoop/script_sqoop_avro.sh     ``` <br>
 
 # CAPA PROCESAMIENTO / CLEANSED / TRUSTED
@@ -87,6 +87,20 @@ Para ello creamos una tabla externa:
 ```     >_CREATE EXTERNAL TABLE retail_db_cleansed.top10_productos (product_name STRING,total_ventas DOUBLE) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE LOCATION '/cleansed/top10_productos_text';```   <br>
 Luego cargas los datos procesados 
 ```     >_INSERT OVERWRITE TABLE retail_db_cleansed.top10_productos SELECT p.product_name, SUM(oi.order_item_subtotal) AS total_ventas FROM retail_db_raw.order_items oi JOIN retail_db_raw.products p ON oi.order_item_product_id = p.product_id GROUP BY p.product_name ORDER BY total_ventas DESC LIMIT 10; ```   <br>
+
+# CAPA USUARIO
+###  Crear una base de datos emulando una capa de usuario en mysql
+Entrar a contenedor de mysql 
+```     >_ mysql -u root -p ```<br>
+
+Crear una base de datos realcional para el usuario
+```     >_ mysql>CREATE DATABASE retail_db_cleansed_rel;     ```<br>
+```     >_ mysql> use retail_db_cleansed_rel;     ```<br>
+```     >_ mysql> CREATE TABLE top10_productos (product_name VARCHAR(255),total_ventas DOUBLE);     ```<br>
+
+Exportar el contenido de la capa cleansed a la capa usuario (mysql)
+```     >_ sh /datanode/scripts/sqoop/script_sqoop_textfile_export.sh     ```<br>
+
 
 
 #### ----------------------------- PRACTICA 2  -------------------------------------## 
