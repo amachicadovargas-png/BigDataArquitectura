@@ -31,7 +31,14 @@ pass: root
 port: 3310
 <br>
 Ejecutar ifconfig en terminal para obtener la ip (eth0)
-# 3.- Docker Hive
+
+# 3 Sqoop para Ingesta de Datos
+
+## Sqoop instalación y permisos 
+Para utilizar sqoop en el datanode debemos ejecutar lo siguiente
+```     >_ sh /datanode/scripts/script.sh     ``` <br> 
+
+# 4.- Docker Hive
 Validar los serviciso de la arquitectura 
 
 # CAPA INGESTA / RAW /LANDING 
@@ -41,10 +48,6 @@ Para poder trabajar con hadoop ingresamos al contenedor del datanode. <br>
 Abrimos un terminal nuevo y ejecutamos lo siguiente
 ```     >_ docker exec -it datanode bash     ``` <br> 
 Asi para cada contenedor con el que queremos trabajar. <br>
-
-## Sqoop instalación y permisos 
-Para utilizar sqoop en el datanode debemos ejecutar lo siguiente
-```     >_ sh /datanode/scripts/script.sh     ``` <br> 
 
 ###  Exportar tablas de mysql - hdfs con sqoop
 Para exportar las tabla de la base de datos retail con sqoop ejecutar lo siguiente:<br>
