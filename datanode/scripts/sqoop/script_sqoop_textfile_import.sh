@@ -5,6 +5,7 @@ sqoop import \
 --username=root \
 --password=root \
 --table order_items \
+--columns order_item_id,order_item_order_id,order_item_product_id,order_item_quantity,order_item_subtotal,order_item_product_price \
 --as-textfile \
 --target-dir=/raw/mysql/order_items \
 --delete-target-dir > /tmp/log_order_items.log
