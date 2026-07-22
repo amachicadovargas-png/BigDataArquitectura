@@ -5,10 +5,12 @@
 2. Entrar al codespace 
 3. Instalar la extendsion de DOCKER EXPLORER
 4. Abrir terminal de codespace
+   
    ```    >git fetch origin     ``` <br>
    ```    >git reset --hard origin/master     ``` <br>
    
-5. Ejecutar el siguiente comando para desplegar los contenedores<br>
+6. Ejecutar el siguiente comando para desplegar los contenedores<br>
+
 ```    >docker compose -f docker-compose-hive.yml up     ``` <br>
 
 Validar la practica 2_PracticaIngesta-Hive
@@ -34,6 +36,7 @@ Ejecutar ifconfig en terminal para obtener la ip (eth0)
 
 Ayuda 
 Recreamos la imagen de mysql     
+
 ```    >_ docker compose down mysql     ``` <br>
 ```    >_ docker compose up -d --build mysql     ``` <br>
 
@@ -42,12 +45,15 @@ Recreamos la imagen de mysql
 ### Entrar a un contenedor "datanode"  -> docker exec -it xxxx bash
 Para poder trabajar con hadoop ingresamos al contenedor del datanode. <br>
 Abrimos un terminal nuevo y ejecutamos lo siguiente
+
 ```     >_ docker exec -it datanode bash     ``` <br> 
+
 Asi para cada contenedor con el que queremos trabajar. <br>
 
 
 ## Sqoop instalación y permisos 
 Para utilizar sqoop en el datanode debemos ejecutar lo siguiente
+
 ```     >_ sh /datanode/scripts/script.sh     ``` <br> 
 
 # 4.- Docker Hive
@@ -57,6 +63,7 @@ Validar los serviciso de la arquitectura
 
 ###  Exportar tablas de mysql - hdfs con sqoop
 Para exportar las tabla de la base de datos retail con sqoop ejecutar lo siguiente:<br>
+
 ```     >_ sh /datanode/scripts/sqoop/script_sqoop_textfile_import.sh     ```<br>
 ```     >_ sh /datanode/scripts/sqoop/script_sqoop_avro.sh     ``` <br>
 
@@ -66,15 +73,18 @@ Para poder trabajar con hive, asumimos que ya existe datos en HDFS y creams tabl
 a partir de un archivo HDFS. Para ello debemos :
 
 Abrir un terminal y copiar el archivo hive.hql a hive-server<br> 
+
 ```     >_ docker cp datanode/scripts/hive/hive.hql hive-server:/opt      ``` <br> 
 ```     >_ docker cp datanode/scripts/hive/hive_avro.hql hive-server:/opt      ``` <br> 
 
 Abrimos un terminal nuevo y ejecutamos lo siguiente
+
 ```     >_ docker exec -it hive-server bash     ``` <br> 
 
 Para crear tablas externas en base a los datos importados con sqoop ejecutamos los siguientes pasos:<br>
 
 En el terminal de hive-server ejecutamos lo siguiente para crear las tablas. <br> 
+
 ```     >_ hive -f /opt/hive.hql    ``` <br> 
 ```     >_ hive -f /opt/hive_avro.hql    ``` <br> 
 
