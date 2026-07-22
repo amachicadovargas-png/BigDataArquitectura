@@ -89,11 +89,22 @@ Para ello creamos una tabla externa:
 ```     >_CREATE DATABASE retail_db_cleansed; ```   <br>
 ```     >_USE DATABASE retail_db_cleansed; ```   <br>
 La tabla puede estar en formato parquet: 
+
 ```     >_CREATE EXTERNAL TABLE retail_db_cleansed.top10_productos ( product_name STRING, total_ventas DOUBLE ) STORED AS PARQUET LOCATION '/cleansed/top10_productos_parquet'; ```   <br>
+
 La tabla puede estar en formato textfile: 
+
 ```     >_CREATE EXTERNAL TABLE retail_db_cleansed.top10_productos_text (product_name STRING,total_ventas DOUBLE) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE LOCATION '/cleansed/top10_productos_text';```   <br>
-Luego cargas los datos procesados 
+
+Luego cargas los datos procesados para la tabla en parquet 
+
+```     >_INSERT OVERWRITE TABLE retail_db_cleansed.top10_productos SELECT p.product_name, SUM(oi.order_item_subtotal) AS total_ventas FROM retail_db_raw.order_items oi JOIN retail_db_raw.products p ON oi.order_item_product_id = p.product_id GROUP BY p.product_name ORDER BY total_ventas DESC LIMIT 10; ```   <br>
+
+Luego cargas los datos procesados para la tabla en textfile 
+
 ```     >_INSERT OVERWRITE TABLE retail_db_cleansed.top10_productos_text SELECT p.product_name, SUM(oi.order_item_subtotal) AS total_ventas FROM retail_db_raw.order_items oi JOIN retail_db_raw.products p ON oi.order_item_product_id = p.product_id GROUP BY p.product_name ORDER BY total_ventas DESC LIMIT 10; ```   <br>
+
+
 
 # CAPA USUARIO / USER / PRESENTACION
 ###  Crear una base de datos emulando una capa de usuario en mysql
