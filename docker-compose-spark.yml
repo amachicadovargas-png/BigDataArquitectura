@@ -38,24 +38,24 @@ services:
     #entrypoint: ["sh", "-c", "cp -R /datanode/sqoop/ /usr/local/ && exec /entrypoint.sh"]
 
   
-  datanode2:
-    build: ./datanode/
-    container_name: datanode2
-    volumes:
-      - /tmp/hdfs/datanode2:/hadoop/dfs/data
-      - ./bank:/bank
-      - ./datanode:/datanode
-    env_file:
-      - ./hadoop-hive.env
-    environment:
-      SERVICE_PRECONDITION: "namenode:50070"
-    depends_on:
-      - namenode
-    ports:
-      - "50076:50075"
-    networks:
-      net_pet:
-        ipv4_address: 172.27.1.13
+  # datanode2:
+  #   build: ./datanode/
+  #   container_name: datanode2
+  #   volumes:
+  #     - /tmp/hdfs/datanode2:/hadoop/dfs/data
+  #     - ./bank:/bank
+  #     - ./datanode:/datanode
+  #   env_file:
+  #     - ./hadoop-hive.env
+  #   environment:
+  #     SERVICE_PRECONDITION: "namenode:50070"
+  #   depends_on:
+  #     - namenode
+  #   ports:
+  #     - "50076:50075"
+  #   networks:
+  #     net_pet:
+  #       ipv4_address: 172.27.1.13
 
   mysql:
     build: ./mysql/
