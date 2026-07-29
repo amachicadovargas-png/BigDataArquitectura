@@ -5,9 +5,8 @@ sqoop import \
 --username=root \
 --password=root \
 --table order_items \
---columns order_item_id,order_item_order_id,order_item_product_id,order_item_quantity,order_item_subtotal,order_item_product_price \
 --as-textfile \
---target-dir=/raw/mysql/order_items \
+--target-dir=/user/datapath/datasets/order_items \
 --delete-target-dir > /tmp/log_order_items.log
 
 sqoop import \
@@ -15,9 +14,8 @@ sqoop import \
 --username=root \
 --password=root \
 --table products \
---columns product_id,product_category_id,product_name,product_description,product_price,product_image \
 --as-textfile \
---target-dir=/raw/mysql/products \
+--target-dir=/user/datapath/datasets/products \
 --delete-target-dir > /tmp/log_products.log
 
 sqoop import \
@@ -26,7 +24,7 @@ sqoop import \
 --password=root \
 --table customers \
 --as-textfile \
---target-dir=/raw/mysql/customers \
+--target-dir=/user/datapath/datasets/customers \
 --delete-target-dir > /tmp/log_customer.log
 
 sqoop import \
@@ -35,7 +33,7 @@ sqoop import \
 --password=root \
 --table departments \
 --as-textfile \
---target-dir=/raw/mysql/departments \
+--target-dir=/user/datapath/datasets/departments \
 --delete-target-dir > /tmp/log_departments.log
 
 sqoop import \
@@ -44,7 +42,7 @@ sqoop import \
 --password=root \
 --table categories \
 --as-textfile \
---target-dir=/raw/mysql/categories \
+--target-dir=/user/datapath/datasets/categories \
 --delete-target-dir > /tmp/log_categories.log
 
 sqoop import \
@@ -53,5 +51,15 @@ sqoop import \
 --password=root \
 --table orders \
 --as-textfile \
---target-dir=/raw/mysql/orders \
+--target-dir=/user/datapath/datasets/orders \
 --delete-target-dir > /tmp/log_orders.log
+
+# sqoop import \
+# --connect "jdbc:mysql://mysql:3306/bd_vanessa" \
+# --username=root \
+# --password=root \
+# --table student_mat \
+# --split-by age \
+# --as-textfile \
+# --target-dir=/user/raw/mysql/bd_vanessa/t_student_mat \
+# --delete-target-dir > /tmp/log_customer.log
