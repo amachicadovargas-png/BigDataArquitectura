@@ -1,6 +1,7 @@
 #!/bin/bash
+export PATH=/usr/local/sqoop/bin:$PATH
 sqoop import \
---connect "jdbc:mysql://10.0.2.195:3310/retail_db" \
+--connect "jdbc:mysql://mysql:3306/retail_db" \
 --username=root \
 --password=root \
 --table customers \
@@ -9,7 +10,7 @@ sqoop import \
 --delete-target-dir
 
 sqoop import \
---connect "jdbc:mysql://10.0.2.195:3310/retail_db" \
+--connect "jdbc:mysql://mysql:3306/retail_db" \
 --username=root \
 --password=root \
 --table departments \
@@ -18,7 +19,7 @@ sqoop import \
 --delete-target-dir
 
 sqoop import \
---connect "jdbc:mysql://10.0.2.195:3310/retail_db" \
+--connect "jdbc:mysql://mysql:3306/retail_db" \
 --username=root \
 --password=root \
 --table categories \
@@ -27,7 +28,7 @@ sqoop import \
 --delete-target-dir
 
 sqoop import \
---connect "jdbc:mysql://10.0.2.195:3310/retail_db" \
+--connect "jdbc:mysql://mysql:3306/retail_db" \
 --username=root \
 --password=root \
 --table orders \
@@ -36,7 +37,7 @@ sqoop import \
 --delete-target-dir
 
 sqoop import \
---connect "jdbc:mysql://10.0.2.195:3310/retail_db" \
+--connect "jdbc:mysql://mysql:3306/retail_db" \
 --username=root \
 --password=root \
 --table order_items \
@@ -45,7 +46,7 @@ sqoop import \
 --delete-target-dir
 
 sqoop import \
---connect "jdbc:mysql://10.0.2.195:3310/retail_db" \
+--connect "jdbc:mysql://mysql:3306/retail_db" \
 --username=root \
 --password=root \
 --table products \

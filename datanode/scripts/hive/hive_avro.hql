@@ -1,44 +1,38 @@
-CREATE DATABASE IF NOT EXISTS retail_db;
+CREATE DATABASE IF NOT EXISTS retail_db_raw;
+USE retail_db_raw;
 
-USE retail_db;
-
-CREATE EXTERNAL TABLE categories_avro
+CREATE EXTERNAL TABLE IF NOT EXISTS categories_avro
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
 STORED as AVRO
 LOCATION 'hdfs://namenode:8020/user/datapath/datasets/avro/categories'
-TBLPROPERTIES ('avro.schema.url'='hdfs://namenode:8020/user/datapath/datasets/avro/categories.avsc');
+TBLPROPERTIES ('avro.schema.url'='hdfs:///user/datapath/datasets/avro/categories.avsc');
 
-
-CREATE EXTERNAL TABLE customers_avro
+CREATE EXTERNAL TABLE IF NOT EXISTS customers_avro
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
 STORED as AVRO
 LOCATION 'hdfs://namenode:8020/user/datapath/datasets/avro/customers'
-TBLPROPERTIES ('avro.schema.url'='hdfs://namenode:8020/user/datapath/datasets/avro/customers.avsc');
+TBLPROPERTIES ('avro.schema.url'='hdfs:///user/datapath/datasets/avro/customers.avsc');
 
-
-CREATE EXTERNAL TABLE orders_avro
+CREATE EXTERNAL TABLE IF NOT EXISTS orders_avro
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
 STORED as AVRO
 LOCATION 'hdfs://namenode:8020/user/datapath/datasets/avro/orders'
-TBLPROPERTIES ('avro.schema.url'='hdfs://namenode:8020/user/datapath/datasets/avro/orders.avsc');
+TBLPROPERTIES ('avro.schema.url'='hdfs:///user/datapath/datasets/avro/orders.avsc');
 
-
-CREATE EXTERNAL TABLE order_items_avro
+CREATE EXTERNAL TABLE IF NOT EXISTS order_items_avro
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
 STORED as AVRO
 LOCATION 'hdfs://namenode:8020/user/datapath/datasets/avro/order_items'
-TBLPROPERTIES ('avro.schema.url'='hdfs://namenode:8020/user/datapath/datasets/avro/order_items.avsc');
+TBLPROPERTIES ('avro.schema.url'='hdfs:///user/datapath/datasets/avro/order_items.avsc');
 
-
-CREATE EXTERNAL TABLE departments_avro
+CREATE EXTERNAL TABLE IF NOT EXISTS departments_avro
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
 STORED as AVRO
 LOCATION 'hdfs://namenode:8020/user/datapath/datasets/avro/departments'
-TBLPROPERTIES ('avro.schema.url'='hdfs://namenode:8020/user/datapath/datasets/avro/departments.avsc');
+TBLPROPERTIES ('avro.schema.url'='hdfs:///user/datapath/datasets/avro/departments.avsc');
 
-
-CREATE EXTERNAL TABLE products_avro
+CREATE EXTERNAL TABLE IF NOT EXISTS products_avro
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
 STORED as AVRO
 LOCATION 'hdfs://namenode:8020/user/datapath/datasets/avro/products'
-TBLPROPERTIES ('avro.schema.url'='hdfs://namenode:8020/user/datapath/datasets/avro/products.avsc');
+TBLPROPERTIES ('avro.schema.url'='hdfs:///user/datapath/datasets/avro/products.avsc');

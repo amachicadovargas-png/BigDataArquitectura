@@ -1,4 +1,5 @@
 #!/bin/bash
+export PATH=/usr/local/sqoop/bin:$PATH
 sqoop import \
 --connect "jdbc:mysql://mysql:3306/retail_db" \
 --username=root \
@@ -18,7 +19,7 @@ sqoop import \
 --delete-target-dir > /tmp/log_departments.log
 
 sqoop import \
---connect "jdbc:mysql:///mysql:3306/retail_db" \
+--connect "jdbc:mysql://mysql:3306/retail_db" \
 --username=root \
 --password=root \
 --table categories \
@@ -52,7 +53,6 @@ sqoop import \
 --as-textfile \
 --target-dir=/user/datapath/datasets/products \
 --delete-target-dir > /tmp/log_products.log
-
 
 sqoop import \
 --connect "jdbc:mysql://mysql:3306/bd_vanessa" \

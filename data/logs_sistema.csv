@@ -1,0 +1,323 @@
+id_log,fecha,evento,nivel_severidad,servidor_id
+1,2026-06-16 01:00:00,Backup programado ejecutado,INFORMATIVO,3
+2,2026-06-16 01:10:00,Actualizacion de certificado completada,INFORMATIVO,4
+3,2026-06-16 02:30:00,Chequeo de salud OK,INFORMATIVO,3
+4,2026-06-16 04:50:00,Backup programado ejecutado,INFORMATIVO,6
+5,2026-06-16 04:55:00,Chequeo de salud OK,INFORMATIVO,4
+6,2026-06-16 07:10:00,Backup programado ejecutado,INFORMATIVO,3
+7,2026-06-16 08:10:00,Chequeo de salud OK,INFORMATIVO,5
+8,2026-06-16 08:15:00,Backup programado ejecutado,INFORMATIVO,1
+9,2026-06-16 11:25:00,Backup programado ejecutado,INFORMATIVO,4
+10,2026-06-16 11:40:00,Actualizacion de certificado completada,INFORMATIVO,6
+11,2026-06-16 15:30:00,Backup programado ejecutado,INFORMATIVO,3
+12,2026-06-16 16:15:00,Actualizacion de certificado completada,INFORMATIVO,2
+13,2026-06-16 19:00:00,Backup programado ejecutado,INFORMATIVO,4
+14,2026-06-16 19:20:00,Actualizacion de certificado completada,INFORMATIVO,2
+15,2026-06-16 20:35:00,Chequeo de salud OK,INFORMATIVO,3
+16,2026-06-16 22:40:00,Backup programado ejecutado,INFORMATIVO,1
+17,2026-06-17 01:45:00,Actualizacion de certificado completada,INFORMATIVO,1
+18,2026-06-17 01:45:00,Actualizacion de certificado completada,INFORMATIVO,6
+19,2026-06-17 02:05:00,Backup programado ejecutado,INFORMATIVO,5
+20,2026-06-17 04:50:00,Chequeo de salud OK,INFORMATIVO,3
+21,2026-06-17 07:35:00,Actualizacion de certificado completada,INFORMATIVO,4
+22,2026-06-17 10:40:00,Reinicio autom. servicio,INFORMATIVO,1
+23,2026-06-17 11:40:00,Actualizacion de certificado completada,INFORMATIVO,6
+24,2026-06-17 12:10:00,Chequeo de salud OK,INFORMATIVO,2
+25,2026-06-17 13:50:00,Actualizacion de certificado completada,INFORMATIVO,3
+26,2026-06-17 14:30:00,Chequeo de salud OK,INFORMATIVO,6
+27,2026-06-17 16:05:00,Backup programado ejecutado,INFORMATIVO,4
+28,2026-06-17 18:15:00,Reinicio autom. servicio,INFORMATIVO,2
+29,2026-06-17 18:40:00,Backup programado ejecutado,INFORMATIVO,6
+30,2026-06-17 20:05:00,Chequeo de salud OK,INFORMATIVO,6
+31,2026-06-17 20:25:00,Reinicio autom. servicio,INFORMATIVO,2
+32,2026-06-17 21:55:00,Chequeo de salud OK,INFORMATIVO,4
+33,2026-06-17 22:05:00,Chequeo de salud OK,INFORMATIVO,6
+34,2026-06-17 22:30:00,Reinicio autom. servicio,INFORMATIVO,5
+35,2026-06-18 00:35:00,Backup programado ejecutado,INFORMATIVO,1
+36,2026-06-18 00:55:00,Reinicio autom. servicio,INFORMATIVO,2
+37,2026-06-18 01:00:00,Actualizacion de certificado completada,INFORMATIVO,2
+38,2026-06-18 02:10:00,Chequeo de salud OK,INFORMATIVO,4
+39,2026-06-18 03:30:00,Reinicio autom. servicio,INFORMATIVO,3
+40,2026-06-18 05:15:00,Chequeo de salud OK,INFORMATIVO,4
+41,2026-06-18 05:35:00,Reinicio autom. servicio,INFORMATIVO,6
+42,2026-06-18 06:25:00,Backup programado ejecutado,INFORMATIVO,5
+43,2026-06-18 08:05:00,Chequeo de salud OK,INFORMATIVO,1
+44,2026-06-18 08:10:00,Chequeo de salud OK,INFORMATIVO,1
+45,2026-06-18 09:10:00,Latencia red >200ms,ADVERTENCIA,4
+46,2026-06-18 09:25:00,Uso elevado de CPU,ADVERTENCIA,4
+47,2026-06-18 09:40:00,Uso elevado de CPU,ADVERTENCIA,4
+48,2026-06-18 09:40:00,Uso elevado de CPU,ADVERTENCIA,1
+49,2026-06-18 09:50:00,Servicio caido - reinicio automatico,CRITICO,1
+50,2026-06-18 09:55:00,CPU ALTA DETECTADA,CRITICO,4
+51,2026-06-18 10:00:00,Saturacion de memoria,CRITICO,4
+52,2026-06-18 10:10:00,Uso elevado de CPU,ADVERTENCIA,1
+53,2026-06-18 10:15:00,Timeout en conexion a base de datos,CRITICO,4
+54,2026-06-18 10:20:00,Cola de transacciones creciendo,ADVERTENCIA,1
+55,2026-06-18 10:30:00,Timeout en conexion a base de datos,CRITICO,1
+56,2026-06-18 10:35:00,Saturacion de memoria,CRITICO,1
+57,2026-06-18 10:40:00,Timeout en conexion a base de datos,CRITICO,4
+58,2026-06-18 10:50:00,CPU ALTA DETECTADA,CRITICO,1
+59,2026-06-18 10:50:00,Reintentos de conexion detectados,ADVERTENCIA,4
+60,2026-06-18 10:55:00,Cola de transacciones creciendo,ADVERTENCIA,1
+61,2026-06-18 11:00:00,Saturacion de memoria,CRITICO,1
+62,2026-06-18 11:05:00,Uso elevado de CPU,ADVERTENCIA,4
+63,2026-06-18 11:15:00,Timeout en conexion a base de datos,CRITICO,4
+64,2026-06-18 11:30:00,Latencia red >200ms,ADVERTENCIA,1
+65,2026-06-18 11:35:00,Cola de transacciones creciendo,ADVERTENCIA,4
+66,2026-06-18 11:35:00,Servicio caido - reinicio automatico,CRITICO,1
+67,2026-06-18 11:40:00,Latencia red >200ms,ADVERTENCIA,1
+68,2026-06-18 11:45:00,Uso elevado de CPU,ADVERTENCIA,4
+69,2026-06-18 11:50:00,Latencia red >200ms,ADVERTENCIA,1
+70,2026-06-18 12:30:00,Chequeo de salud OK,INFORMATIVO,4
+71,2026-06-18 14:35:00,Chequeo de salud OK,INFORMATIVO,1
+72,2026-06-18 14:45:00,Backup programado ejecutado,INFORMATIVO,2
+73,2026-06-18 15:15:00,Reinicio autom. servicio,INFORMATIVO,4
+74,2026-06-18 16:00:00,Reinicio autom. servicio,INFORMATIVO,6
+75,2026-06-18 20:05:00,Backup programado ejecutado,INFORMATIVO,5
+76,2026-06-18 22:00:00,Actualizacion de certificado completada,INFORMATIVO,2
+77,2026-06-18 22:30:00,Reinicio autom. servicio,INFORMATIVO,6
+78,2026-06-18 22:55:00,Actualizacion de certificado completada,INFORMATIVO,2
+79,2026-06-18 23:00:00,Reinicio autom. servicio,INFORMATIVO,6
+80,2026-06-18 23:05:00,Chequeo de salud OK,INFORMATIVO,4
+81,2026-06-18 23:25:00,Reinicio autom. servicio,INFORMATIVO,4
+82,2026-06-19 00:55:00,Actualizacion de certificado completada,INFORMATIVO,4
+83,2026-06-19 01:00:00,Actualizacion de certificado completada,INFORMATIVO,3
+84,2026-06-19 02:45:00,Backup programado ejecutado,INFORMATIVO,5
+85,2026-06-19 02:50:00,Backup programado ejecutado,INFORMATIVO,2
+86,2026-06-19 06:10:00,Reinicio autom. servicio,INFORMATIVO,6
+87,2026-06-19 06:15:00,Chequeo de salud OK,INFORMATIVO,1
+88,2026-06-19 06:45:00,Backup programado ejecutado,INFORMATIVO,6
+89,2026-06-19 06:50:00,Reinicio autom. servicio,INFORMATIVO,1
+90,2026-06-19 07:15:00,Chequeo de salud OK,INFORMATIVO,6
+91,2026-06-19 07:20:00,Chequeo de salud OK,INFORMATIVO,5
+92,2026-06-19 07:45:00,Chequeo de salud OK,INFORMATIVO,4
+93,2026-06-19 09:10:00,Backup programado ejecutado,INFORMATIVO,1
+94,2026-06-19 10:05:00,Reinicio autom. servicio,INFORMATIVO,5
+95,2026-06-19 13:05:00,Reinicio autom. servicio,INFORMATIVO,1
+96,2026-06-19 16:10:00,Chequeo de salud OK,INFORMATIVO,2
+97,2026-06-19 17:15:00,Backup programado ejecutado,INFORMATIVO,1
+98,2026-06-19 18:20:00,Actualizacion de certificado completada,INFORMATIVO,5
+99,2026-06-19 19:05:00,Backup programado ejecutado,INFORMATIVO,6
+100,2026-06-19 19:50:00,Actualizacion de certificado completada,INFORMATIVO,5
+101,2026-06-19 21:40:00,Backup programado ejecutado,INFORMATIVO,2
+102,2026-06-19 22:50:00,Actualizacion de certificado completada,INFORMATIVO,5
+103,2026-06-20 00:55:00,Actualizacion de certificado completada,INFORMATIVO,5
+104,2026-06-20 01:15:00,Chequeo de salud OK,INFORMATIVO,2
+105,2026-06-20 01:20:00,Reinicio autom. servicio,INFORMATIVO,3
+106,2026-06-20 05:00:00,Chequeo de salud OK,INFORMATIVO,6
+107,2026-06-20 05:15:00,Actualizacion de certificado completada,INFORMATIVO,2
+108,2026-06-20 07:20:00,Actualizacion de certificado completada,INFORMATIVO,4
+109,2026-06-20 08:05:00,Reinicio autom. servicio,INFORMATIVO,4
+110,2026-06-20 09:10:00,Backup programado ejecutado,INFORMATIVO,4
+111,2026-06-20 11:10:00,Chequeo de salud OK,INFORMATIVO,1
+112,2026-06-20 11:40:00,Actualizacion de certificado completada,INFORMATIVO,5
+113,2026-06-20 13:40:00,Chequeo de salud OK,INFORMATIVO,6
+114,2026-06-20 14:45:00,Actualizacion de certificado completada,INFORMATIVO,1
+115,2026-06-20 17:05:00,Chequeo de salud OK,INFORMATIVO,6
+116,2026-06-20 17:35:00,Reinicio autom. servicio,INFORMATIVO,1
+117,2026-06-20 18:00:00,Chequeo de salud OK,INFORMATIVO,6
+118,2026-06-20 18:15:00,Backup programado ejecutado,INFORMATIVO,4
+119,2026-06-20 22:30:00,Reinicio autom. servicio,INFORMATIVO,4
+120,2026-06-21 00:00:00,Chequeo de salud OK,INFORMATIVO,1
+121,2026-06-21 00:40:00,Chequeo de salud OK,INFORMATIVO,1
+122,2026-06-21 00:50:00,Backup programado ejecutado,INFORMATIVO,4
+123,2026-06-21 01:25:00,Reinicio autom. servicio,INFORMATIVO,4
+124,2026-06-21 02:40:00,Backup programado ejecutado,INFORMATIVO,2
+125,2026-06-21 03:30:00,Reinicio autom. servicio,INFORMATIVO,4
+126,2026-06-21 06:25:00,Actualizacion de certificado completada,INFORMATIVO,6
+127,2026-06-21 10:20:00,Reinicio autom. servicio,INFORMATIVO,5
+128,2026-06-21 10:40:00,Chequeo de salud OK,INFORMATIVO,2
+129,2026-06-21 11:15:00,Reinicio autom. servicio,INFORMATIVO,6
+130,2026-06-21 13:00:00,Backup programado ejecutado,INFORMATIVO,6
+131,2026-06-21 14:00:00,Chequeo de salud OK,INFORMATIVO,3
+132,2026-06-21 14:10:00,Backup programado ejecutado,INFORMATIVO,6
+133,2026-06-21 15:05:00,Backup programado ejecutado,INFORMATIVO,1
+134,2026-06-21 15:40:00,Chequeo de salud OK,INFORMATIVO,6
+135,2026-06-21 16:00:00,Backup programado ejecutado,INFORMATIVO,3
+136,2026-06-21 18:00:00,Actualizacion de certificado completada,INFORMATIVO,3
+137,2026-06-21 19:50:00,Reinicio autom. servicio,INFORMATIVO,4
+138,2026-06-21 20:00:00,Chequeo de salud OK,INFORMATIVO,6
+139,2026-06-21 20:15:00,Actualizacion de certificado completada,INFORMATIVO,1
+140,2026-06-21 20:40:00,Reinicio autom. servicio,INFORMATIVO,3
+141,2026-06-21 20:40:00,Reinicio autom. servicio,INFORMATIVO,4
+142,2026-06-21 20:50:00,Chequeo de salud OK,INFORMATIVO,5
+143,2026-06-21 21:35:00,Chequeo de salud OK,INFORMATIVO,3
+144,2026-06-21 21:45:00,Chequeo de salud OK,INFORMATIVO,5
+145,2026-06-21 23:50:00,Actualizacion de certificado completada,INFORMATIVO,1
+146,2026-06-22 00:10:00,Reinicio autom. servicio,INFORMATIVO,1
+147,2026-06-22 02:55:00,Actualizacion de certificado completada,INFORMATIVO,3
+148,2026-06-22 03:05:00,Chequeo de salud OK,INFORMATIVO,3
+149,2026-06-22 05:35:00,Actualizacion de certificado completada,INFORMATIVO,4
+150,2026-06-22 06:45:00,Backup programado ejecutado,INFORMATIVO,6
+151,2026-06-22 08:25:00,Backup programado ejecutado,INFORMATIVO,4
+152,2026-06-22 08:40:00,Chequeo de salud OK,INFORMATIVO,5
+153,2026-06-22 10:30:00,Chequeo de salud OK,INFORMATIVO,1
+154,2026-06-22 10:40:00,Chequeo de salud OK,INFORMATIVO,5
+155,2026-06-22 11:20:00,Backup programado ejecutado,INFORMATIVO,5
+156,2026-06-22 12:15:00,Backup programado ejecutado,INFORMATIVO,3
+157,2026-06-22 13:55:00,Reinicio autom. servicio,INFORMATIVO,3
+158,2026-06-22 14:45:00,Actualizacion de certificado completada,INFORMATIVO,3
+159,2026-06-22 16:10:00,Chequeo de salud OK,INFORMATIVO,4
+160,2026-06-22 17:40:00,Chequeo de salud OK,INFORMATIVO,6
+161,2026-06-22 18:50:00,Reinicio autom. servicio,INFORMATIVO,1
+162,2026-06-22 20:05:00,Backup programado ejecutado,INFORMATIVO,5
+163,2026-06-22 20:25:00,Backup programado ejecutado,INFORMATIVO,1
+164,2026-06-22 22:20:00,Backup programado ejecutado,INFORMATIVO,3
+165,2026-06-22 22:35:00,Backup programado ejecutado,INFORMATIVO,6
+166,2026-06-22 22:45:00,Actualizacion de certificado completada,INFORMATIVO,1
+167,2026-06-23 00:05:00,Actualizacion de certificado completada,INFORMATIVO,6
+168,2026-06-23 02:55:00,Actualizacion de certificado completada,INFORMATIVO,3
+169,2026-06-23 04:05:00,Reinicio autom. servicio,INFORMATIVO,2
+170,2026-06-23 04:10:00,Actualizacion de certificado completada,INFORMATIVO,2
+171,2026-06-23 07:15:00,Chequeo de salud OK,INFORMATIVO,5
+172,2026-06-23 08:35:00,Actualizacion de certificado completada,INFORMATIVO,1
+173,2026-06-23 09:40:00,Latencia red >200ms,ADVERTENCIA,6
+174,2026-06-23 09:45:00,Latencia red >200ms,ADVERTENCIA,2
+175,2026-06-23 10:10:00,Reinicio autom. servicio,INFORMATIVO,4
+176,2026-06-23 10:45:00,Latencia red >200ms,ADVERTENCIA,6
+177,2026-06-23 11:25:00,Actualizacion de certificado completada,INFORMATIVO,2
+178,2026-06-23 15:15:00,Chequeo de salud OK,INFORMATIVO,6
+179,2026-06-23 16:05:00,Chequeo de salud OK,INFORMATIVO,1
+180,2026-06-23 16:05:00,Reinicio autom. servicio,INFORMATIVO,5
+181,2026-06-23 16:30:00,Backup programado ejecutado,INFORMATIVO,3
+182,2026-06-23 17:35:00,Actualizacion de certificado completada,INFORMATIVO,6
+183,2026-06-23 18:40:00,Reinicio autom. servicio,INFORMATIVO,4
+184,2026-06-23 19:30:00,Reinicio autom. servicio,INFORMATIVO,3
+185,2026-06-23 21:55:00,Backup programado ejecutado,INFORMATIVO,5
+186,2026-06-23 23:30:00,Chequeo de salud OK,INFORMATIVO,2
+187,2026-06-24 00:00:00,Actualizacion de certificado completada,INFORMATIVO,6
+188,2026-06-24 00:40:00,Backup programado ejecutado,INFORMATIVO,1
+189,2026-06-24 00:50:00,Chequeo de salud OK,INFORMATIVO,6
+190,2026-06-24 00:55:00,Actualizacion de certificado completada,INFORMATIVO,3
+191,2026-06-24 03:10:00,Backup programado ejecutado,INFORMATIVO,1
+192,2026-06-24 03:40:00,Reinicio autom. servicio,INFORMATIVO,3
+193,2026-06-24 08:25:00,Chequeo de salud OK,INFORMATIVO,4
+194,2026-06-24 08:25:00,Reinicio autom. servicio,INFORMATIVO,1
+195,2026-06-24 09:30:00,Chequeo de salud OK,INFORMATIVO,2
+196,2026-06-24 11:05:00,Backup programado ejecutado,INFORMATIVO,1
+197,2026-06-24 12:00:00,Reinicio autom. servicio,INFORMATIVO,5
+198,2026-06-24 13:50:00,Reinicio autom. servicio,INFORMATIVO,6
+199,2026-06-24 15:20:00,Actualizacion de certificado completada,INFORMATIVO,5
+200,2026-06-24 15:30:00,Backup programado ejecutado,INFORMATIVO,4
+201,2026-06-24 15:40:00,Actualizacion de certificado completada,INFORMATIVO,1
+202,2026-06-24 16:00:00,Actualizacion de certificado completada,INFORMATIVO,4
+203,2026-06-24 17:15:00,Actualizacion de certificado completada,INFORMATIVO,5
+204,2026-06-24 17:45:00,Actualizacion de certificado completada,INFORMATIVO,6
+205,2026-06-24 18:25:00,Backup programado ejecutado,INFORMATIVO,6
+206,2026-06-24 19:45:00,Reinicio autom. servicio,INFORMATIVO,4
+207,2026-06-24 20:05:00,Actualizacion de certificado completada,INFORMATIVO,4
+208,2026-06-25 02:00:00,Reinicio autom. servicio,INFORMATIVO,3
+209,2026-06-25 02:55:00,Reinicio autom. servicio,INFORMATIVO,4
+210,2026-06-25 04:30:00,Chequeo de salud OK,INFORMATIVO,6
+211,2026-06-25 06:50:00,Actualizacion de certificado completada,INFORMATIVO,6
+212,2026-06-25 09:15:00,Actualizacion de certificado completada,INFORMATIVO,1
+213,2026-06-25 09:30:00,Chequeo de salud OK,INFORMATIVO,6
+214,2026-06-25 09:50:00,Backup programado ejecutado,INFORMATIVO,6
+215,2026-06-25 10:55:00,Chequeo de salud OK,INFORMATIVO,2
+216,2026-06-25 13:20:00,Backup programado ejecutado,INFORMATIVO,5
+217,2026-06-25 17:40:00,Backup programado ejecutado,INFORMATIVO,2
+218,2026-06-25 20:10:00,Actualizacion de certificado completada,INFORMATIVO,6
+219,2026-06-25 20:30:00,Actualizacion de certificado completada,INFORMATIVO,3
+220,2026-06-25 23:45:00,Reinicio autom. servicio,INFORMATIVO,6
+221,2026-06-26 00:20:00,Actualizacion de certificado completada,INFORMATIVO,2
+222,2026-06-26 03:05:00,Reinicio autom. servicio,INFORMATIVO,2
+223,2026-06-26 03:35:00,Backup programado ejecutado,INFORMATIVO,3
+224,2026-06-26 04:40:00,Actualizacion de certificado completada,INFORMATIVO,1
+225,2026-06-26 04:45:00,Backup programado ejecutado,INFORMATIVO,4
+226,2026-06-26 05:40:00,Chequeo de salud OK,INFORMATIVO,3
+227,2026-06-26 06:50:00,Chequeo de salud OK,INFORMATIVO,1
+228,2026-06-26 08:20:00,Actualizacion de certificado completada,INFORMATIVO,1
+229,2026-06-26 10:20:00,Actualizacion de certificado completada,INFORMATIVO,6
+230,2026-06-26 18:55:00,Chequeo de salud OK,INFORMATIVO,2
+231,2026-06-26 19:50:00,Reinicio autom. servicio,INFORMATIVO,4
+232,2026-06-26 20:15:00,Reinicio autom. servicio,INFORMATIVO,5
+233,2026-06-26 20:50:00,Chequeo de salud OK,INFORMATIVO,4
+234,2026-06-26 21:35:00,Backup programado ejecutado,INFORMATIVO,4
+235,2026-06-26 23:10:00,Backup programado ejecutado,INFORMATIVO,1
+236,2026-06-26 23:35:00,Reinicio autom. servicio,INFORMATIVO,6
+237,2026-06-27 00:25:00,Backup programado ejecutado,INFORMATIVO,5
+238,2026-06-27 00:35:00,Actualizacion de certificado completada,INFORMATIVO,1
+239,2026-06-27 00:45:00,Chequeo de salud OK,INFORMATIVO,2
+240,2026-06-27 02:45:00,Reinicio autom. servicio,INFORMATIVO,5
+241,2026-06-27 04:55:00,Reinicio autom. servicio,INFORMATIVO,3
+242,2026-06-27 06:25:00,Reinicio autom. servicio,INFORMATIVO,2
+243,2026-06-27 08:25:00,Reinicio autom. servicio,INFORMATIVO,1
+244,2026-06-27 09:55:00,Backup programado ejecutado,INFORMATIVO,3
+245,2026-06-27 10:45:00,Chequeo de salud OK,INFORMATIVO,4
+246,2026-06-27 12:10:00,Reinicio autom. servicio,INFORMATIVO,2
+247,2026-06-27 12:25:00,Chequeo de salud OK,INFORMATIVO,2
+248,2026-06-27 13:20:00,Reinicio autom. servicio,INFORMATIVO,1
+249,2026-06-27 14:00:00,Reinicio autom. servicio,INFORMATIVO,3
+250,2026-06-27 14:00:00,Uso elevado de CPU,ADVERTENCIA,4
+251,2026-06-27 14:00:00,Latencia red >200ms,ADVERTENCIA,5
+252,2026-06-27 14:05:00,Servicio caido - reinicio automatico,CRITICO,4
+253,2026-06-27 14:15:00,Cola de transacciones creciendo,ADVERTENCIA,4
+254,2026-06-27 14:20:00,CPU ALTA DETECTADA,CRITICO,4
+255,2026-06-27 14:20:00,Servicio caido - reinicio automatico,CRITICO,5
+256,2026-06-27 14:25:00,Latencia red >200ms,ADVERTENCIA,5
+257,2026-06-27 14:45:00,Reintentos de conexion detectados,ADVERTENCIA,5
+258,2026-06-27 14:55:00,Saturacion de memoria,CRITICO,4
+259,2026-06-27 15:00:00,Servicio caido - reinicio automatico,CRITICO,4
+260,2026-06-27 15:10:00,Servicio caido - reinicio automatico,CRITICO,4
+261,2026-06-27 15:15:00,Timeout en conexion a base de datos,CRITICO,4
+262,2026-06-27 15:20:00,Timeout en conexion a base de datos,CRITICO,5
+263,2026-06-27 15:20:00,Saturacion de memoria,CRITICO,4
+264,2026-06-27 15:25:00,Cola de transacciones creciendo,ADVERTENCIA,5
+265,2026-06-27 15:40:00,CPU ALTA DETECTADA,CRITICO,4
+266,2026-06-27 15:45:00,Latencia red >200ms,ADVERTENCIA,4
+267,2026-06-27 15:50:00,Servicio caido - reinicio automatico,CRITICO,4
+268,2026-06-27 15:50:00,Reintentos de conexion detectados,ADVERTENCIA,5
+269,2026-06-27 16:05:00,Cola de transacciones creciendo,ADVERTENCIA,4
+270,2026-06-27 16:10:00,Uso elevado de CPU,ADVERTENCIA,5
+271,2026-06-27 16:15:00,Uso elevado de CPU,ADVERTENCIA,4
+272,2026-06-27 16:15:00,Latencia red >200ms,ADVERTENCIA,5
+273,2026-06-27 16:25:00,CPU ALTA DETECTADA,CRITICO,5
+274,2026-06-27 16:35:00,Timeout en conexion a base de datos,CRITICO,4
+275,2026-06-27 16:45:00,Saturacion de memoria,CRITICO,5
+276,2026-06-27 16:50:00,Timeout en conexion a base de datos,CRITICO,4
+277,2026-06-27 16:55:00,Uso elevado de CPU,ADVERTENCIA,4
+278,2026-06-27 17:55:00,Actualizacion de certificado completada,INFORMATIVO,6
+279,2026-06-27 18:00:00,Actualizacion de certificado completada,INFORMATIVO,6
+280,2026-06-27 20:45:00,Actualizacion de certificado completada,INFORMATIVO,6
+281,2026-06-27 20:50:00,Reinicio autom. servicio,INFORMATIVO,1
+282,2026-06-27 20:55:00,Actualizacion de certificado completada,INFORMATIVO,4
+283,2026-06-27 21:00:00,Reinicio autom. servicio,INFORMATIVO,5
+284,2026-06-28 02:00:00,Actualizacion de certificado completada,INFORMATIVO,6
+285,2026-06-28 05:25:00,Reinicio autom. servicio,INFORMATIVO,2
+286,2026-06-28 05:40:00,Actualizacion de certificado completada,INFORMATIVO,6
+287,2026-06-28 05:45:00,Backup programado ejecutado,INFORMATIVO,3
+288,2026-06-28 06:50:00,Actualizacion de certificado completada,INFORMATIVO,1
+289,2026-06-28 07:20:00,Actualizacion de certificado completada,INFORMATIVO,2
+290,2026-06-28 08:25:00,Reinicio autom. servicio,INFORMATIVO,6
+291,2026-06-28 09:05:00,Backup programado ejecutado,INFORMATIVO,1
+292,2026-06-28 09:30:00,Backup programado ejecutado,INFORMATIVO,2
+293,2026-06-28 11:35:00,Actualizacion de certificado completada,INFORMATIVO,3
+294,2026-06-28 11:45:00,Chequeo de salud OK,INFORMATIVO,6
+295,2026-06-28 11:55:00,Backup programado ejecutado,INFORMATIVO,1
+296,2026-06-28 14:10:00,Chequeo de salud OK,INFORMATIVO,4
+297,2026-06-28 14:40:00,Actualizacion de certificado completada,INFORMATIVO,2
+298,2026-06-28 16:50:00,Actualizacion de certificado completada,INFORMATIVO,1
+299,2026-06-28 17:25:00,Reinicio autom. servicio,INFORMATIVO,5
+300,2026-06-28 18:15:00,Actualizacion de certificado completada,INFORMATIVO,6
+301,2026-06-28 19:20:00,Backup programado ejecutado,INFORMATIVO,4
+302,2026-06-28 19:25:00,Reinicio autom. servicio,INFORMATIVO,4
+303,2026-06-28 20:00:00,Reinicio autom. servicio,INFORMATIVO,4
+304,2026-06-28 22:20:00,Backup programado ejecutado,INFORMATIVO,2
+305,2026-06-28 22:40:00,Chequeo de salud OK,INFORMATIVO,6
+306,2026-06-29 00:05:00,Backup programado ejecutado,INFORMATIVO,6
+307,2026-06-29 01:35:00,Reinicio autom. servicio,INFORMATIVO,2
+308,2026-06-29 01:40:00,Chequeo de salud OK,INFORMATIVO,2
+309,2026-06-29 04:50:00,Chequeo de salud OK,INFORMATIVO,3
+310,2026-06-29 05:10:00,Actualizacion de certificado completada,INFORMATIVO,1
+311,2026-06-29 09:20:00,Backup programado ejecutado,INFORMATIVO,5
+312,2026-06-29 09:35:00,Chequeo de salud OK,INFORMATIVO,6
+313,2026-06-29 11:00:00,Backup programado ejecutado,INFORMATIVO,4
+314,2026-06-29 13:10:00,Backup programado ejecutado,INFORMATIVO,3
+315,2026-06-29 14:40:00,Chequeo de salud OK,INFORMATIVO,3
+316,2026-06-29 14:40:00,Backup programado ejecutado,INFORMATIVO,1
+317,2026-06-29 17:40:00,Chequeo de salud OK,INFORMATIVO,1
+318,2026-06-29 21:10:00,Reinicio autom. servicio,INFORMATIVO,5
+319,2026-06-29 21:55:00,Chequeo de salud OK,INFORMATIVO,3
+320,2026-06-29 22:20:00,Reinicio autom. servicio,INFORMATIVO,3
+321,2026-06-29 22:25:00,Chequeo de salud OK,INFORMATIVO,3
+322,2026-06-29 22:55:00,Reinicio autom. servicio,INFORMATIVO,3
