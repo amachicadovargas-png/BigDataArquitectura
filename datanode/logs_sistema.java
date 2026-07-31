@@ -2,7 +2,15 @@
 // WARNING: This class is AUTO-GENERATED. Modify at your own risk.
 //
 // Debug information:
+<<<<<<< HEAD
+<<<<<<<< HEAD:datanode/logs_sistema.java
 // Generated date: Fri Jul 24 01:26:28 UTC 2026
+========
+// Generated date: Sat Sep 06 01:52:40 UTC 2025
+>>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3:datanode/scripts/sqoop/orders.java
+=======
+// Generated date: Wed Jul 22 01:16:37 UTC 2026
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
 // For connector: org.apache.sqoop.manager.MySQLManager
 import org.apache.hadoop.io.BytesWritable;
 import org.apache.hadoop.io.Text;
@@ -40,10 +48,24 @@ public class logs_sistema extends SqoopRecord  implements DBWritable, Writable {
   public static interface FieldSetterCommand {    void setField(Object value);  }  protected ResultSet __cur_result_set;
   private Map<String, FieldSetterCommand> setters = new HashMap<String, FieldSetterCommand>();
   private void init0() {
+<<<<<<< HEAD
+<<<<<<<< HEAD:datanode/logs_sistema.java
     setters.put("id_log", new FieldSetterCommand() {
       @Override
       public void setField(Object value) {
         logs_sistema.this.id_log = (Integer)value;
+========
+    setters.put("order_id", new FieldSetterCommand() {
+      @Override
+      public void setField(Object value) {
+        orders.this.order_id = (Integer)value;
+>>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3:datanode/scripts/sqoop/orders.java
+=======
+    setters.put("evento", new FieldSetterCommand() {
+      @Override
+      public void setField(Object value) {
+        logs_sistema.this.evento = (String)value;
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
       }
     });
     setters.put("fecha", new FieldSetterCommand() {
@@ -52,10 +74,24 @@ public class logs_sistema extends SqoopRecord  implements DBWritable, Writable {
         logs_sistema.this.fecha = (java.sql.Timestamp)value;
       }
     });
+<<<<<<< HEAD
+<<<<<<<< HEAD:datanode/logs_sistema.java
     setters.put("evento", new FieldSetterCommand() {
       @Override
       public void setField(Object value) {
         logs_sistema.this.evento = (String)value;
+========
+    setters.put("order_customer_id", new FieldSetterCommand() {
+      @Override
+      public void setField(Object value) {
+        orders.this.order_customer_id = (Integer)value;
+>>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3:datanode/scripts/sqoop/orders.java
+=======
+    setters.put("id_log", new FieldSetterCommand() {
+      @Override
+      public void setField(Object value) {
+        logs_sistema.this.id_log = (Integer)value;
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
       }
     });
     setters.put("nivel_severidad", new FieldSetterCommand() {
@@ -74,6 +110,8 @@ public class logs_sistema extends SqoopRecord  implements DBWritable, Writable {
   public logs_sistema() {
     init0();
   }
+<<<<<<< HEAD
+<<<<<<<< HEAD:datanode/logs_sistema.java
   private Integer id_log;
   public Integer get_id_log() {
     return id_log;
@@ -83,6 +121,28 @@ public class logs_sistema extends SqoopRecord  implements DBWritable, Writable {
   }
   public logs_sistema with_id_log(Integer id_log) {
     this.id_log = id_log;
+========
+  private Integer order_id;
+  public Integer get_order_id() {
+    return order_id;
+  }
+  public void set_order_id(Integer order_id) {
+    this.order_id = order_id;
+  }
+  public orders with_order_id(Integer order_id) {
+    this.order_id = order_id;
+>>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3:datanode/scripts/sqoop/orders.java
+=======
+  private String evento;
+  public String get_evento() {
+    return evento;
+  }
+  public void set_evento(String evento) {
+    this.evento = evento;
+  }
+  public logs_sistema with_evento(String evento) {
+    this.evento = evento;
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
     return this;
   }
   private java.sql.Timestamp fecha;
@@ -96,6 +156,8 @@ public class logs_sistema extends SqoopRecord  implements DBWritable, Writable {
     this.fecha = fecha;
     return this;
   }
+<<<<<<< HEAD
+<<<<<<<< HEAD:datanode/logs_sistema.java
   private String evento;
   public String get_evento() {
     return evento;
@@ -105,6 +167,28 @@ public class logs_sistema extends SqoopRecord  implements DBWritable, Writable {
   }
   public logs_sistema with_evento(String evento) {
     this.evento = evento;
+========
+  private Integer order_customer_id;
+  public Integer get_order_customer_id() {
+    return order_customer_id;
+  }
+  public void set_order_customer_id(Integer order_customer_id) {
+    this.order_customer_id = order_customer_id;
+  }
+  public orders with_order_customer_id(Integer order_customer_id) {
+    this.order_customer_id = order_customer_id;
+>>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3:datanode/scripts/sqoop/orders.java
+=======
+  private Integer id_log;
+  public Integer get_id_log() {
+    return id_log;
+  }
+  public void set_id_log(Integer id_log) {
+    this.id_log = id_log;
+  }
+  public logs_sistema with_id_log(Integer id_log) {
+    this.id_log = id_log;
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
     return this;
   }
   private String nivel_severidad;
@@ -138,11 +222,26 @@ public class logs_sistema extends SqoopRecord  implements DBWritable, Writable {
     }
     logs_sistema that = (logs_sistema) o;
     boolean equal = true;
+<<<<<<< HEAD
+<<<<<<<< HEAD:datanode/logs_sistema.java
     equal = equal && (this.id_log == null ? that.id_log == null : this.id_log.equals(that.id_log));
     equal = equal && (this.fecha == null ? that.fecha == null : this.fecha.equals(that.fecha));
     equal = equal && (this.evento == null ? that.evento == null : this.evento.equals(that.evento));
     equal = equal && (this.nivel_severidad == null ? that.nivel_severidad == null : this.nivel_severidad.equals(that.nivel_severidad));
     equal = equal && (this.servidor_id == null ? that.servidor_id == null : this.servidor_id.equals(that.servidor_id));
+========
+    equal = equal && (this.order_id == null ? that.order_id == null : this.order_id.equals(that.order_id));
+    equal = equal && (this.order_date == null ? that.order_date == null : this.order_date.equals(that.order_date));
+    equal = equal && (this.order_customer_id == null ? that.order_customer_id == null : this.order_customer_id.equals(that.order_customer_id));
+    equal = equal && (this.order_status == null ? that.order_status == null : this.order_status.equals(that.order_status));
+>>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3:datanode/scripts/sqoop/orders.java
+=======
+    equal = equal && (this.evento == null ? that.evento == null : this.evento.equals(that.evento));
+    equal = equal && (this.fecha == null ? that.fecha == null : this.fecha.equals(that.fecha));
+    equal = equal && (this.id_log == null ? that.id_log == null : this.id_log.equals(that.id_log));
+    equal = equal && (this.nivel_severidad == null ? that.nivel_severidad == null : this.nivel_severidad.equals(that.nivel_severidad));
+    equal = equal && (this.servidor_id == null ? that.servidor_id == null : this.servidor_id.equals(that.servidor_id));
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
     return equal;
   }
   public boolean equals0(Object o) {
@@ -154,27 +253,69 @@ public class logs_sistema extends SqoopRecord  implements DBWritable, Writable {
     }
     logs_sistema that = (logs_sistema) o;
     boolean equal = true;
+<<<<<<< HEAD
+<<<<<<<< HEAD:datanode/logs_sistema.java
     equal = equal && (this.id_log == null ? that.id_log == null : this.id_log.equals(that.id_log));
     equal = equal && (this.fecha == null ? that.fecha == null : this.fecha.equals(that.fecha));
     equal = equal && (this.evento == null ? that.evento == null : this.evento.equals(that.evento));
     equal = equal && (this.nivel_severidad == null ? that.nivel_severidad == null : this.nivel_severidad.equals(that.nivel_severidad));
     equal = equal && (this.servidor_id == null ? that.servidor_id == null : this.servidor_id.equals(that.servidor_id));
+========
+    equal = equal && (this.order_id == null ? that.order_id == null : this.order_id.equals(that.order_id));
+    equal = equal && (this.order_date == null ? that.order_date == null : this.order_date.equals(that.order_date));
+    equal = equal && (this.order_customer_id == null ? that.order_customer_id == null : this.order_customer_id.equals(that.order_customer_id));
+    equal = equal && (this.order_status == null ? that.order_status == null : this.order_status.equals(that.order_status));
+>>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3:datanode/scripts/sqoop/orders.java
+=======
+    equal = equal && (this.evento == null ? that.evento == null : this.evento.equals(that.evento));
+    equal = equal && (this.fecha == null ? that.fecha == null : this.fecha.equals(that.fecha));
+    equal = equal && (this.id_log == null ? that.id_log == null : this.id_log.equals(that.id_log));
+    equal = equal && (this.nivel_severidad == null ? that.nivel_severidad == null : this.nivel_severidad.equals(that.nivel_severidad));
+    equal = equal && (this.servidor_id == null ? that.servidor_id == null : this.servidor_id.equals(that.servidor_id));
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
     return equal;
   }
   public void readFields(ResultSet __dbResults) throws SQLException {
     this.__cur_result_set = __dbResults;
+<<<<<<< HEAD
+<<<<<<<< HEAD:datanode/logs_sistema.java
     this.id_log = JdbcWritableBridge.readInteger(1, __dbResults);
     this.fecha = JdbcWritableBridge.readTimestamp(2, __dbResults);
     this.evento = JdbcWritableBridge.readString(3, __dbResults);
+=======
+    this.evento = JdbcWritableBridge.readString(1, __dbResults);
+    this.fecha = JdbcWritableBridge.readTimestamp(2, __dbResults);
+    this.id_log = JdbcWritableBridge.readInteger(3, __dbResults);
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
     this.nivel_severidad = JdbcWritableBridge.readString(4, __dbResults);
     this.servidor_id = JdbcWritableBridge.readInteger(5, __dbResults);
   }
   public void readFields0(ResultSet __dbResults) throws SQLException {
+<<<<<<< HEAD
     this.id_log = JdbcWritableBridge.readInteger(1, __dbResults);
     this.fecha = JdbcWritableBridge.readTimestamp(2, __dbResults);
     this.evento = JdbcWritableBridge.readString(3, __dbResults);
     this.nivel_severidad = JdbcWritableBridge.readString(4, __dbResults);
     this.servidor_id = JdbcWritableBridge.readInteger(5, __dbResults);
+========
+    this.order_id = JdbcWritableBridge.readInteger(1, __dbResults);
+    this.order_date = JdbcWritableBridge.readTimestamp(2, __dbResults);
+    this.order_customer_id = JdbcWritableBridge.readInteger(3, __dbResults);
+    this.order_status = JdbcWritableBridge.readString(4, __dbResults);
+  }
+  public void readFields0(ResultSet __dbResults) throws SQLException {
+    this.order_id = JdbcWritableBridge.readInteger(1, __dbResults);
+    this.order_date = JdbcWritableBridge.readTimestamp(2, __dbResults);
+    this.order_customer_id = JdbcWritableBridge.readInteger(3, __dbResults);
+    this.order_status = JdbcWritableBridge.readString(4, __dbResults);
+>>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3:datanode/scripts/sqoop/orders.java
+=======
+    this.evento = JdbcWritableBridge.readString(1, __dbResults);
+    this.fecha = JdbcWritableBridge.readTimestamp(2, __dbResults);
+    this.id_log = JdbcWritableBridge.readInteger(3, __dbResults);
+    this.nivel_severidad = JdbcWritableBridge.readString(4, __dbResults);
+    this.servidor_id = JdbcWritableBridge.readInteger(5, __dbResults);
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
   }
   public void loadLargeObjects(LargeObjectLoader __loader)
       throws SQLException, IOException, InterruptedException {
@@ -187,27 +328,67 @@ public class logs_sistema extends SqoopRecord  implements DBWritable, Writable {
   }
 
   public int write(PreparedStatement __dbStmt, int __off) throws SQLException {
+<<<<<<< HEAD
+<<<<<<<< HEAD:datanode/logs_sistema.java
     JdbcWritableBridge.writeInteger(id_log, 1 + __off, 4, __dbStmt);
     JdbcWritableBridge.writeTimestamp(fecha, 2 + __off, 93, __dbStmt);
     JdbcWritableBridge.writeString(evento, 3 + __off, 12, __dbStmt);
+=======
+    JdbcWritableBridge.writeString(evento, 1 + __off, 12, __dbStmt);
+    JdbcWritableBridge.writeTimestamp(fecha, 2 + __off, 93, __dbStmt);
+    JdbcWritableBridge.writeInteger(id_log, 3 + __off, 4, __dbStmt);
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
     JdbcWritableBridge.writeString(nivel_severidad, 4 + __off, 12, __dbStmt);
     JdbcWritableBridge.writeInteger(servidor_id, 5 + __off, 4, __dbStmt);
     return 5;
   }
   public void write0(PreparedStatement __dbStmt, int __off) throws SQLException {
+<<<<<<< HEAD
     JdbcWritableBridge.writeInteger(id_log, 1 + __off, 4, __dbStmt);
     JdbcWritableBridge.writeTimestamp(fecha, 2 + __off, 93, __dbStmt);
     JdbcWritableBridge.writeString(evento, 3 + __off, 12, __dbStmt);
     JdbcWritableBridge.writeString(nivel_severidad, 4 + __off, 12, __dbStmt);
     JdbcWritableBridge.writeInteger(servidor_id, 5 + __off, 4, __dbStmt);
+========
+    JdbcWritableBridge.writeInteger(order_id, 1 + __off, 4, __dbStmt);
+    JdbcWritableBridge.writeTimestamp(order_date, 2 + __off, 93, __dbStmt);
+    JdbcWritableBridge.writeInteger(order_customer_id, 3 + __off, 4, __dbStmt);
+    JdbcWritableBridge.writeString(order_status, 4 + __off, 12, __dbStmt);
+    return 4;
+  }
+  public void write0(PreparedStatement __dbStmt, int __off) throws SQLException {
+    JdbcWritableBridge.writeInteger(order_id, 1 + __off, 4, __dbStmt);
+    JdbcWritableBridge.writeTimestamp(order_date, 2 + __off, 93, __dbStmt);
+    JdbcWritableBridge.writeInteger(order_customer_id, 3 + __off, 4, __dbStmt);
+    JdbcWritableBridge.writeString(order_status, 4 + __off, 12, __dbStmt);
+>>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3:datanode/scripts/sqoop/orders.java
+=======
+    JdbcWritableBridge.writeString(evento, 1 + __off, 12, __dbStmt);
+    JdbcWritableBridge.writeTimestamp(fecha, 2 + __off, 93, __dbStmt);
+    JdbcWritableBridge.writeInteger(id_log, 3 + __off, 4, __dbStmt);
+    JdbcWritableBridge.writeString(nivel_severidad, 4 + __off, 12, __dbStmt);
+    JdbcWritableBridge.writeInteger(servidor_id, 5 + __off, 4, __dbStmt);
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
   }
   public void readFields(DataInput __dataIn) throws IOException {
 this.readFields0(__dataIn);  }
   public void readFields0(DataInput __dataIn) throws IOException {
     if (__dataIn.readBoolean()) { 
+<<<<<<< HEAD
+<<<<<<<< HEAD:datanode/logs_sistema.java
         this.id_log = null;
     } else {
     this.id_log = Integer.valueOf(__dataIn.readInt());
+========
+        this.order_id = null;
+    } else {
+    this.order_id = Integer.valueOf(__dataIn.readInt());
+>>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3:datanode/scripts/sqoop/orders.java
+=======
+        this.evento = null;
+    } else {
+    this.evento = Text.readString(__dataIn);
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
     }
     if (__dataIn.readBoolean()) { 
         this.fecha = null;
@@ -216,9 +397,21 @@ this.readFields0(__dataIn);  }
     this.fecha.setNanos(__dataIn.readInt());
     }
     if (__dataIn.readBoolean()) { 
+<<<<<<< HEAD
+<<<<<<<< HEAD:datanode/logs_sistema.java
         this.evento = null;
     } else {
     this.evento = Text.readString(__dataIn);
+========
+        this.order_customer_id = null;
+    } else {
+    this.order_customer_id = Integer.valueOf(__dataIn.readInt());
+>>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3:datanode/scripts/sqoop/orders.java
+=======
+        this.id_log = null;
+    } else {
+    this.id_log = Integer.valueOf(__dataIn.readInt());
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
     }
     if (__dataIn.readBoolean()) { 
         this.nivel_severidad = null;
@@ -232,11 +425,27 @@ this.readFields0(__dataIn);  }
     }
   }
   public void write(DataOutput __dataOut) throws IOException {
+<<<<<<< HEAD
+<<<<<<<< HEAD:datanode/logs_sistema.java
     if (null == this.id_log) { 
         __dataOut.writeBoolean(true);
     } else {
         __dataOut.writeBoolean(false);
     __dataOut.writeInt(this.id_log);
+========
+    if (null == this.order_id) { 
+        __dataOut.writeBoolean(true);
+    } else {
+        __dataOut.writeBoolean(false);
+    __dataOut.writeInt(this.order_id);
+>>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3:datanode/scripts/sqoop/orders.java
+=======
+    if (null == this.evento) { 
+        __dataOut.writeBoolean(true);
+    } else {
+        __dataOut.writeBoolean(false);
+    Text.writeString(__dataOut, evento);
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
     }
     if (null == this.fecha) { 
         __dataOut.writeBoolean(true);
@@ -245,11 +454,27 @@ this.readFields0(__dataIn);  }
     __dataOut.writeLong(this.fecha.getTime());
     __dataOut.writeInt(this.fecha.getNanos());
     }
+<<<<<<< HEAD
+<<<<<<<< HEAD:datanode/logs_sistema.java
     if (null == this.evento) { 
         __dataOut.writeBoolean(true);
     } else {
         __dataOut.writeBoolean(false);
     Text.writeString(__dataOut, evento);
+========
+    if (null == this.order_customer_id) { 
+        __dataOut.writeBoolean(true);
+    } else {
+        __dataOut.writeBoolean(false);
+    __dataOut.writeInt(this.order_customer_id);
+>>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3:datanode/scripts/sqoop/orders.java
+=======
+    if (null == this.id_log) { 
+        __dataOut.writeBoolean(true);
+    } else {
+        __dataOut.writeBoolean(false);
+    __dataOut.writeInt(this.id_log);
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
     }
     if (null == this.nivel_severidad) { 
         __dataOut.writeBoolean(true);
@@ -265,11 +490,27 @@ this.readFields0(__dataIn);  }
     }
   }
   public void write0(DataOutput __dataOut) throws IOException {
+<<<<<<< HEAD
+<<<<<<<< HEAD:datanode/logs_sistema.java
     if (null == this.id_log) { 
         __dataOut.writeBoolean(true);
     } else {
         __dataOut.writeBoolean(false);
     __dataOut.writeInt(this.id_log);
+========
+    if (null == this.order_id) { 
+        __dataOut.writeBoolean(true);
+    } else {
+        __dataOut.writeBoolean(false);
+    __dataOut.writeInt(this.order_id);
+>>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3:datanode/scripts/sqoop/orders.java
+=======
+    if (null == this.evento) { 
+        __dataOut.writeBoolean(true);
+    } else {
+        __dataOut.writeBoolean(false);
+    Text.writeString(__dataOut, evento);
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
     }
     if (null == this.fecha) { 
         __dataOut.writeBoolean(true);
@@ -278,11 +519,27 @@ this.readFields0(__dataIn);  }
     __dataOut.writeLong(this.fecha.getTime());
     __dataOut.writeInt(this.fecha.getNanos());
     }
+<<<<<<< HEAD
+<<<<<<<< HEAD:datanode/logs_sistema.java
     if (null == this.evento) { 
         __dataOut.writeBoolean(true);
     } else {
         __dataOut.writeBoolean(false);
     Text.writeString(__dataOut, evento);
+========
+    if (null == this.order_customer_id) { 
+        __dataOut.writeBoolean(true);
+    } else {
+        __dataOut.writeBoolean(false);
+    __dataOut.writeInt(this.order_customer_id);
+>>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3:datanode/scripts/sqoop/orders.java
+=======
+    if (null == this.id_log) { 
+        __dataOut.writeBoolean(true);
+    } else {
+        __dataOut.writeBoolean(false);
+    __dataOut.writeInt(this.id_log);
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
     }
     if (null == this.nivel_severidad) { 
         __dataOut.writeBoolean(true);
@@ -310,11 +567,27 @@ this.readFields0(__dataIn);  }
   public String toString(DelimiterSet delimiters, boolean useRecordDelim) {
     StringBuilder __sb = new StringBuilder();
     char fieldDelim = delimiters.getFieldsTerminatedBy();
+<<<<<<< HEAD
+<<<<<<<< HEAD:datanode/logs_sistema.java
     __sb.append(FieldFormatter.escapeAndEnclose(id_log==null?"null":"" + id_log, delimiters));
+========
+    __sb.append(FieldFormatter.escapeAndEnclose(order_id==null?"null":"" + order_id, delimiters));
+>>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3:datanode/scripts/sqoop/orders.java
     __sb.append(fieldDelim);
     __sb.append(FieldFormatter.escapeAndEnclose(fecha==null?"null":"" + fecha, delimiters));
     __sb.append(fieldDelim);
+<<<<<<<< HEAD:datanode/logs_sistema.java
     __sb.append(FieldFormatter.escapeAndEnclose(evento==null?"null":evento, delimiters));
+========
+    __sb.append(FieldFormatter.escapeAndEnclose(order_customer_id==null?"null":"" + order_customer_id, delimiters));
+>>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3:datanode/scripts/sqoop/orders.java
+=======
+    __sb.append(FieldFormatter.escapeAndEnclose(evento==null?"null":evento, delimiters));
+    __sb.append(fieldDelim);
+    __sb.append(FieldFormatter.escapeAndEnclose(fecha==null?"null":"" + fecha, delimiters));
+    __sb.append(fieldDelim);
+    __sb.append(FieldFormatter.escapeAndEnclose(id_log==null?"null":"" + id_log, delimiters));
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
     __sb.append(fieldDelim);
     __sb.append(FieldFormatter.escapeAndEnclose(nivel_severidad==null?"null":nivel_severidad, delimiters));
     __sb.append(fieldDelim);
@@ -325,11 +598,27 @@ this.readFields0(__dataIn);  }
     return __sb.toString();
   }
   public void toString0(DelimiterSet delimiters, StringBuilder __sb, char fieldDelim) {
+<<<<<<< HEAD
+<<<<<<<< HEAD:datanode/logs_sistema.java
     __sb.append(FieldFormatter.escapeAndEnclose(id_log==null?"null":"" + id_log, delimiters));
+========
+    __sb.append(FieldFormatter.escapeAndEnclose(order_id==null?"null":"" + order_id, delimiters));
+>>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3:datanode/scripts/sqoop/orders.java
     __sb.append(fieldDelim);
     __sb.append(FieldFormatter.escapeAndEnclose(fecha==null?"null":"" + fecha, delimiters));
     __sb.append(fieldDelim);
+<<<<<<<< HEAD:datanode/logs_sistema.java
     __sb.append(FieldFormatter.escapeAndEnclose(evento==null?"null":evento, delimiters));
+========
+    __sb.append(FieldFormatter.escapeAndEnclose(order_customer_id==null?"null":"" + order_customer_id, delimiters));
+>>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3:datanode/scripts/sqoop/orders.java
+=======
+    __sb.append(FieldFormatter.escapeAndEnclose(evento==null?"null":evento, delimiters));
+    __sb.append(fieldDelim);
+    __sb.append(FieldFormatter.escapeAndEnclose(fecha==null?"null":"" + fecha, delimiters));
+    __sb.append(fieldDelim);
+    __sb.append(FieldFormatter.escapeAndEnclose(id_log==null?"null":"" + id_log, delimiters));
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
     __sb.append(fieldDelim);
     __sb.append(FieldFormatter.escapeAndEnclose(nivel_severidad==null?"null":nivel_severidad, delimiters));
     __sb.append(fieldDelim);
@@ -394,8 +683,18 @@ this.readFields0(__dataIn);  }
     } else {
         __cur_str = "null";
     }
+<<<<<<< HEAD
+<<<<<<<< HEAD:datanode/logs_sistema.java
     if (__cur_str.equals("null") || __cur_str.length() == 0) { this.id_log = null; } else {
       this.id_log = Integer.valueOf(__cur_str);
+========
+    if (__cur_str.equals("null") || __cur_str.length() == 0) { this.order_id = null; } else {
+      this.order_id = Integer.valueOf(__cur_str);
+>>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3:datanode/scripts/sqoop/orders.java
+=======
+    if (__cur_str.equals("null")) { this.evento = null; } else {
+      this.evento = __cur_str;
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
     }
 
     if (__it.hasNext()) {
@@ -412,8 +711,18 @@ this.readFields0(__dataIn);  }
     } else {
         __cur_str = "null";
     }
+<<<<<<< HEAD
+<<<<<<<< HEAD:datanode/logs_sistema.java
     if (__cur_str.equals("null")) { this.evento = null; } else {
       this.evento = __cur_str;
+========
+    if (__cur_str.equals("null") || __cur_str.length() == 0) { this.order_customer_id = null; } else {
+      this.order_customer_id = Integer.valueOf(__cur_str);
+>>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3:datanode/scripts/sqoop/orders.java
+=======
+    if (__cur_str.equals("null") || __cur_str.length() == 0) { this.id_log = null; } else {
+      this.id_log = Integer.valueOf(__cur_str);
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
     }
 
     if (__it.hasNext()) {
@@ -444,8 +753,18 @@ this.readFields0(__dataIn);  }
     } else {
         __cur_str = "null";
     }
+<<<<<<< HEAD
+<<<<<<<< HEAD:datanode/logs_sistema.java
     if (__cur_str.equals("null") || __cur_str.length() == 0) { this.id_log = null; } else {
       this.id_log = Integer.valueOf(__cur_str);
+========
+    if (__cur_str.equals("null") || __cur_str.length() == 0) { this.order_id = null; } else {
+      this.order_id = Integer.valueOf(__cur_str);
+>>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3:datanode/scripts/sqoop/orders.java
+=======
+    if (__cur_str.equals("null")) { this.evento = null; } else {
+      this.evento = __cur_str;
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
     }
 
     if (__it.hasNext()) {
@@ -462,8 +781,18 @@ this.readFields0(__dataIn);  }
     } else {
         __cur_str = "null";
     }
+<<<<<<< HEAD
+<<<<<<<< HEAD:datanode/logs_sistema.java
     if (__cur_str.equals("null")) { this.evento = null; } else {
       this.evento = __cur_str;
+========
+    if (__cur_str.equals("null") || __cur_str.length() == 0) { this.order_customer_id = null; } else {
+      this.order_customer_id = Integer.valueOf(__cur_str);
+>>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3:datanode/scripts/sqoop/orders.java
+=======
+    if (__cur_str.equals("null") || __cur_str.length() == 0) { this.id_log = null; } else {
+      this.id_log = Integer.valueOf(__cur_str);
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
     }
 
     if (__it.hasNext()) {
@@ -498,20 +827,50 @@ this.readFields0(__dataIn);  }
 
   public Map<String, Object> getFieldMap() {
     Map<String, Object> __sqoop$field_map = new HashMap<String, Object>();
+<<<<<<< HEAD
+<<<<<<<< HEAD:datanode/logs_sistema.java
     __sqoop$field_map.put("id_log", this.id_log);
     __sqoop$field_map.put("fecha", this.fecha);
     __sqoop$field_map.put("evento", this.evento);
     __sqoop$field_map.put("nivel_severidad", this.nivel_severidad);
     __sqoop$field_map.put("servidor_id", this.servidor_id);
+========
+    __sqoop$field_map.put("order_id", this.order_id);
+    __sqoop$field_map.put("order_date", this.order_date);
+    __sqoop$field_map.put("order_customer_id", this.order_customer_id);
+    __sqoop$field_map.put("order_status", this.order_status);
+>>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3:datanode/scripts/sqoop/orders.java
+=======
+    __sqoop$field_map.put("evento", this.evento);
+    __sqoop$field_map.put("fecha", this.fecha);
+    __sqoop$field_map.put("id_log", this.id_log);
+    __sqoop$field_map.put("nivel_severidad", this.nivel_severidad);
+    __sqoop$field_map.put("servidor_id", this.servidor_id);
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
     return __sqoop$field_map;
   }
 
   public void getFieldMap0(Map<String, Object> __sqoop$field_map) {
+<<<<<<< HEAD
+<<<<<<<< HEAD:datanode/logs_sistema.java
     __sqoop$field_map.put("id_log", this.id_log);
     __sqoop$field_map.put("fecha", this.fecha);
     __sqoop$field_map.put("evento", this.evento);
     __sqoop$field_map.put("nivel_severidad", this.nivel_severidad);
     __sqoop$field_map.put("servidor_id", this.servidor_id);
+========
+    __sqoop$field_map.put("order_id", this.order_id);
+    __sqoop$field_map.put("order_date", this.order_date);
+    __sqoop$field_map.put("order_customer_id", this.order_customer_id);
+    __sqoop$field_map.put("order_status", this.order_status);
+>>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3:datanode/scripts/sqoop/orders.java
+=======
+    __sqoop$field_map.put("evento", this.evento);
+    __sqoop$field_map.put("fecha", this.fecha);
+    __sqoop$field_map.put("id_log", this.id_log);
+    __sqoop$field_map.put("nivel_severidad", this.nivel_severidad);
+    __sqoop$field_map.put("servidor_id", this.servidor_id);
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
   }
 
   public void setField(String __fieldName, Object __fieldVal) {

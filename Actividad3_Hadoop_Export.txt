@@ -1,0 +1,46 @@
+Actividad 3 - Clúster Big Data Hadoop
+
+1) Levantar el clúster Hadoop:
+cd /workspaces/BigDataArquitectura
+docker compose -f docker-compose-hadoop.yml up -d
+
+2) Verificar contenedores:
+docker ps --filter "name=namenode" --filter "name=datanode" --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"
+
+3) Confirmar que NameNode ve 3 DataNodes:
+docker exec -it namenode bash -lc 'export HADOOP_PREFIX=/opt/hadoop-2.7.4; export PATH="$HADOOP_PREFIX/bin:$PATH"; hdfs dfsadmin -report'
+
+4) Generar archivo grande en el host:
+fallocate -l 200M archivo_grande.csv
+
+Si fallocate no existe:
+dd if=/dev/zero of=archivo_grande.csv bs=1M count=200 status=progress
+
+5) Copiar el archivo al NameNode:
+docker cp archivo_grande.csv namenode:/home/
+
+6) Subir el archivo a HDFS:
+docker exec -it namenode bash
+export HADOOP_PREFIX=/opt/hadoop-2.7.4
+export HADOOP_CONF_DIR=/etc/hadoop
+export PATH="$HADOOP_PREFIX/bin:$PATH"
+
+hdfs dfs -mkdir -p /temp
+hdfs dfs -put /home/archivo_grande.csv /temp/
+
+7) Validar configuración:
+hdfs getconf -confKey dfs.replication
+hdfs fsck /temp/archivo_grande.csv -files -blocks
+hdfs fsck /temp/archivo_grande.csv -files -blocks -locations
+hdfs getconf -confKey dfs.blocksize
+
+8) Validación en UI:
+Abrir http://localhost:50080
+Ir a Utilities > Browse the file system
+Navegar a /temp
+Seleccionar archivo_grande.csv
+Revisar réplica, bloques y ubicaciones
+
+Script corto de ejecución:
+cd /workspaces/BigDataArquitectura
+scripts/activity3_short.sh

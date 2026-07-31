@@ -1,0 +1,7 @@
+id_canal,tipo_canal,ubicacion,disponibilidad,numero_errores
+101,ATM,La Paz Centro,99.98,2
+102,ATM,El Alto,98.75,15
+103,ACH,Nacional,99.5,0
+104,Banca Online,Nacional,99.9,3
+105,ATM,Santa Cruz,99.6,5
+106,ATM,Cochabamba,99.4,7

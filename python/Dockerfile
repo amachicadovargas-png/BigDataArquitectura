@@ -12,6 +12,7 @@ RUN apt-get -y install default-jre
 WORKDIR /user/app
 
 
+<<<<<<< HEAD
 RUN pip install pyspark==3.0.3
 
 RUN mkdir -p /opt/java8 && \
@@ -21,3 +22,5 @@ RUN mkdir -p /opt/java8 && \
 
 ENV JAVA_HOME=/opt/java8
 ENV PATH="$JAVA_HOME/bin:$PATH"
+=======
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3

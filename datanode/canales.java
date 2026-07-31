@@ -2,7 +2,11 @@
 // WARNING: This class is AUTO-GENERATED. Modify at your own risk.
 //
 // Debug information:
+<<<<<<< HEAD
 // Generated date: Fri Jul 24 01:26:04 UTC 2026
+=======
+// Generated date: Wed Jul 22 01:16:12 UTC 2026
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
 // For connector: org.apache.sqoop.manager.MySQLManager
 import org.apache.hadoop.io.BytesWritable;
 import org.apache.hadoop.io.Text;
@@ -40,12 +44,30 @@ public class canales extends SqoopRecord  implements DBWritable, Writable {
   public static interface FieldSetterCommand {    void setField(Object value);  }  protected ResultSet __cur_result_set;
   private Map<String, FieldSetterCommand> setters = new HashMap<String, FieldSetterCommand>();
   private void init0() {
+<<<<<<< HEAD
+=======
+    setters.put("disponibilidad", new FieldSetterCommand() {
+      @Override
+      public void setField(Object value) {
+        canales.this.disponibilidad = (java.math.BigDecimal)value;
+      }
+    });
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
     setters.put("id_canal", new FieldSetterCommand() {
       @Override
       public void setField(Object value) {
         canales.this.id_canal = (Integer)value;
       }
     });
+<<<<<<< HEAD
+=======
+    setters.put("numero_errores", new FieldSetterCommand() {
+      @Override
+      public void setField(Object value) {
+        canales.this.numero_errores = (Integer)value;
+      }
+    });
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
     setters.put("tipo_canal", new FieldSetterCommand() {
       @Override
       public void setField(Object value) {
@@ -58,6 +80,7 @@ public class canales extends SqoopRecord  implements DBWritable, Writable {
         canales.this.ubicacion = (String)value;
       }
     });
+<<<<<<< HEAD
     setters.put("disponibilidad", new FieldSetterCommand() {
       @Override
       public void setField(Object value) {
@@ -70,10 +93,26 @@ public class canales extends SqoopRecord  implements DBWritable, Writable {
         canales.this.numero_errores = (Integer)value;
       }
     });
+=======
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
   }
   public canales() {
     init0();
   }
+<<<<<<< HEAD
+=======
+  private java.math.BigDecimal disponibilidad;
+  public java.math.BigDecimal get_disponibilidad() {
+    return disponibilidad;
+  }
+  public void set_disponibilidad(java.math.BigDecimal disponibilidad) {
+    this.disponibilidad = disponibilidad;
+  }
+  public canales with_disponibilidad(java.math.BigDecimal disponibilidad) {
+    this.disponibilidad = disponibilidad;
+    return this;
+  }
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
   private Integer id_canal;
   public Integer get_id_canal() {
     return id_canal;
@@ -85,6 +124,20 @@ public class canales extends SqoopRecord  implements DBWritable, Writable {
     this.id_canal = id_canal;
     return this;
   }
+<<<<<<< HEAD
+=======
+  private Integer numero_errores;
+  public Integer get_numero_errores() {
+    return numero_errores;
+  }
+  public void set_numero_errores(Integer numero_errores) {
+    this.numero_errores = numero_errores;
+  }
+  public canales with_numero_errores(Integer numero_errores) {
+    this.numero_errores = numero_errores;
+    return this;
+  }
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
   private String tipo_canal;
   public String get_tipo_canal() {
     return tipo_canal;
@@ -107,6 +160,7 @@ public class canales extends SqoopRecord  implements DBWritable, Writable {
     this.ubicacion = ubicacion;
     return this;
   }
+<<<<<<< HEAD
   private java.math.BigDecimal disponibilidad;
   public java.math.BigDecimal get_disponibilidad() {
     return disponibilidad;
@@ -129,6 +183,8 @@ public class canales extends SqoopRecord  implements DBWritable, Writable {
     this.numero_errores = numero_errores;
     return this;
   }
+=======
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
   public boolean equals(Object o) {
     if (this == o) {
       return true;
@@ -138,11 +194,19 @@ public class canales extends SqoopRecord  implements DBWritable, Writable {
     }
     canales that = (canales) o;
     boolean equal = true;
+<<<<<<< HEAD
     equal = equal && (this.id_canal == null ? that.id_canal == null : this.id_canal.equals(that.id_canal));
     equal = equal && (this.tipo_canal == null ? that.tipo_canal == null : this.tipo_canal.equals(that.tipo_canal));
     equal = equal && (this.ubicacion == null ? that.ubicacion == null : this.ubicacion.equals(that.ubicacion));
     equal = equal && (this.disponibilidad == null ? that.disponibilidad == null : this.disponibilidad.equals(that.disponibilidad));
     equal = equal && (this.numero_errores == null ? that.numero_errores == null : this.numero_errores.equals(that.numero_errores));
+=======
+    equal = equal && (this.disponibilidad == null ? that.disponibilidad == null : this.disponibilidad.equals(that.disponibilidad));
+    equal = equal && (this.id_canal == null ? that.id_canal == null : this.id_canal.equals(that.id_canal));
+    equal = equal && (this.numero_errores == null ? that.numero_errores == null : this.numero_errores.equals(that.numero_errores));
+    equal = equal && (this.tipo_canal == null ? that.tipo_canal == null : this.tipo_canal.equals(that.tipo_canal));
+    equal = equal && (this.ubicacion == null ? that.ubicacion == null : this.ubicacion.equals(that.ubicacion));
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
     return equal;
   }
   public boolean equals0(Object o) {
@@ -154,15 +218,24 @@ public class canales extends SqoopRecord  implements DBWritable, Writable {
     }
     canales that = (canales) o;
     boolean equal = true;
+<<<<<<< HEAD
     equal = equal && (this.id_canal == null ? that.id_canal == null : this.id_canal.equals(that.id_canal));
     equal = equal && (this.tipo_canal == null ? that.tipo_canal == null : this.tipo_canal.equals(that.tipo_canal));
     equal = equal && (this.ubicacion == null ? that.ubicacion == null : this.ubicacion.equals(that.ubicacion));
     equal = equal && (this.disponibilidad == null ? that.disponibilidad == null : this.disponibilidad.equals(that.disponibilidad));
     equal = equal && (this.numero_errores == null ? that.numero_errores == null : this.numero_errores.equals(that.numero_errores));
+=======
+    equal = equal && (this.disponibilidad == null ? that.disponibilidad == null : this.disponibilidad.equals(that.disponibilidad));
+    equal = equal && (this.id_canal == null ? that.id_canal == null : this.id_canal.equals(that.id_canal));
+    equal = equal && (this.numero_errores == null ? that.numero_errores == null : this.numero_errores.equals(that.numero_errores));
+    equal = equal && (this.tipo_canal == null ? that.tipo_canal == null : this.tipo_canal.equals(that.tipo_canal));
+    equal = equal && (this.ubicacion == null ? that.ubicacion == null : this.ubicacion.equals(that.ubicacion));
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
     return equal;
   }
   public void readFields(ResultSet __dbResults) throws SQLException {
     this.__cur_result_set = __dbResults;
+<<<<<<< HEAD
     this.id_canal = JdbcWritableBridge.readInteger(1, __dbResults);
     this.tipo_canal = JdbcWritableBridge.readString(2, __dbResults);
     this.ubicacion = JdbcWritableBridge.readString(3, __dbResults);
@@ -175,6 +248,20 @@ public class canales extends SqoopRecord  implements DBWritable, Writable {
     this.ubicacion = JdbcWritableBridge.readString(3, __dbResults);
     this.disponibilidad = JdbcWritableBridge.readBigDecimal(4, __dbResults);
     this.numero_errores = JdbcWritableBridge.readInteger(5, __dbResults);
+=======
+    this.disponibilidad = JdbcWritableBridge.readBigDecimal(1, __dbResults);
+    this.id_canal = JdbcWritableBridge.readInteger(2, __dbResults);
+    this.numero_errores = JdbcWritableBridge.readInteger(3, __dbResults);
+    this.tipo_canal = JdbcWritableBridge.readString(4, __dbResults);
+    this.ubicacion = JdbcWritableBridge.readString(5, __dbResults);
+  }
+  public void readFields0(ResultSet __dbResults) throws SQLException {
+    this.disponibilidad = JdbcWritableBridge.readBigDecimal(1, __dbResults);
+    this.id_canal = JdbcWritableBridge.readInteger(2, __dbResults);
+    this.numero_errores = JdbcWritableBridge.readInteger(3, __dbResults);
+    this.tipo_canal = JdbcWritableBridge.readString(4, __dbResults);
+    this.ubicacion = JdbcWritableBridge.readString(5, __dbResults);
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
   }
   public void loadLargeObjects(LargeObjectLoader __loader)
       throws SQLException, IOException, InterruptedException {
@@ -187,6 +274,7 @@ public class canales extends SqoopRecord  implements DBWritable, Writable {
   }
 
   public int write(PreparedStatement __dbStmt, int __off) throws SQLException {
+<<<<<<< HEAD
     JdbcWritableBridge.writeInteger(id_canal, 1 + __off, 4, __dbStmt);
     JdbcWritableBridge.writeString(tipo_canal, 2 + __off, 12, __dbStmt);
     JdbcWritableBridge.writeString(ubicacion, 3 + __off, 12, __dbStmt);
@@ -200,16 +288,47 @@ public class canales extends SqoopRecord  implements DBWritable, Writable {
     JdbcWritableBridge.writeString(ubicacion, 3 + __off, 12, __dbStmt);
     JdbcWritableBridge.writeBigDecimal(disponibilidad, 4 + __off, 3, __dbStmt);
     JdbcWritableBridge.writeInteger(numero_errores, 5 + __off, 4, __dbStmt);
+=======
+    JdbcWritableBridge.writeBigDecimal(disponibilidad, 1 + __off, 3, __dbStmt);
+    JdbcWritableBridge.writeInteger(id_canal, 2 + __off, 4, __dbStmt);
+    JdbcWritableBridge.writeInteger(numero_errores, 3 + __off, 4, __dbStmt);
+    JdbcWritableBridge.writeString(tipo_canal, 4 + __off, 12, __dbStmt);
+    JdbcWritableBridge.writeString(ubicacion, 5 + __off, 12, __dbStmt);
+    return 5;
+  }
+  public void write0(PreparedStatement __dbStmt, int __off) throws SQLException {
+    JdbcWritableBridge.writeBigDecimal(disponibilidad, 1 + __off, 3, __dbStmt);
+    JdbcWritableBridge.writeInteger(id_canal, 2 + __off, 4, __dbStmt);
+    JdbcWritableBridge.writeInteger(numero_errores, 3 + __off, 4, __dbStmt);
+    JdbcWritableBridge.writeString(tipo_canal, 4 + __off, 12, __dbStmt);
+    JdbcWritableBridge.writeString(ubicacion, 5 + __off, 12, __dbStmt);
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
   }
   public void readFields(DataInput __dataIn) throws IOException {
 this.readFields0(__dataIn);  }
   public void readFields0(DataInput __dataIn) throws IOException {
     if (__dataIn.readBoolean()) { 
+<<<<<<< HEAD
+=======
+        this.disponibilidad = null;
+    } else {
+    this.disponibilidad = com.cloudera.sqoop.lib.BigDecimalSerializer.readFields(__dataIn);
+    }
+    if (__dataIn.readBoolean()) { 
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
         this.id_canal = null;
     } else {
     this.id_canal = Integer.valueOf(__dataIn.readInt());
     }
     if (__dataIn.readBoolean()) { 
+<<<<<<< HEAD
+=======
+        this.numero_errores = null;
+    } else {
+    this.numero_errores = Integer.valueOf(__dataIn.readInt());
+    }
+    if (__dataIn.readBoolean()) { 
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
         this.tipo_canal = null;
     } else {
     this.tipo_canal = Text.readString(__dataIn);
@@ -219,6 +338,7 @@ this.readFields0(__dataIn);  }
     } else {
     this.ubicacion = Text.readString(__dataIn);
     }
+<<<<<<< HEAD
     if (__dataIn.readBoolean()) { 
         this.disponibilidad = null;
     } else {
@@ -231,12 +351,31 @@ this.readFields0(__dataIn);  }
     }
   }
   public void write(DataOutput __dataOut) throws IOException {
+=======
+  }
+  public void write(DataOutput __dataOut) throws IOException {
+    if (null == this.disponibilidad) { 
+        __dataOut.writeBoolean(true);
+    } else {
+        __dataOut.writeBoolean(false);
+    com.cloudera.sqoop.lib.BigDecimalSerializer.write(this.disponibilidad, __dataOut);
+    }
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
     if (null == this.id_canal) { 
         __dataOut.writeBoolean(true);
     } else {
         __dataOut.writeBoolean(false);
     __dataOut.writeInt(this.id_canal);
     }
+<<<<<<< HEAD
+=======
+    if (null == this.numero_errores) { 
+        __dataOut.writeBoolean(true);
+    } else {
+        __dataOut.writeBoolean(false);
+    __dataOut.writeInt(this.numero_errores);
+    }
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
     if (null == this.tipo_canal) { 
         __dataOut.writeBoolean(true);
     } else {
@@ -249,6 +388,7 @@ this.readFields0(__dataIn);  }
         __dataOut.writeBoolean(false);
     Text.writeString(__dataOut, ubicacion);
     }
+<<<<<<< HEAD
     if (null == this.disponibilidad) { 
         __dataOut.writeBoolean(true);
     } else {
@@ -263,12 +403,31 @@ this.readFields0(__dataIn);  }
     }
   }
   public void write0(DataOutput __dataOut) throws IOException {
+=======
+  }
+  public void write0(DataOutput __dataOut) throws IOException {
+    if (null == this.disponibilidad) { 
+        __dataOut.writeBoolean(true);
+    } else {
+        __dataOut.writeBoolean(false);
+    com.cloudera.sqoop.lib.BigDecimalSerializer.write(this.disponibilidad, __dataOut);
+    }
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
     if (null == this.id_canal) { 
         __dataOut.writeBoolean(true);
     } else {
         __dataOut.writeBoolean(false);
     __dataOut.writeInt(this.id_canal);
     }
+<<<<<<< HEAD
+=======
+    if (null == this.numero_errores) { 
+        __dataOut.writeBoolean(true);
+    } else {
+        __dataOut.writeBoolean(false);
+    __dataOut.writeInt(this.numero_errores);
+    }
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
     if (null == this.tipo_canal) { 
         __dataOut.writeBoolean(true);
     } else {
@@ -281,6 +440,7 @@ this.readFields0(__dataIn);  }
         __dataOut.writeBoolean(false);
     Text.writeString(__dataOut, ubicacion);
     }
+<<<<<<< HEAD
     if (null == this.disponibilidad) { 
         __dataOut.writeBoolean(true);
     } else {
@@ -293,6 +453,8 @@ this.readFields0(__dataIn);  }
         __dataOut.writeBoolean(false);
     __dataOut.writeInt(this.numero_errores);
     }
+=======
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
   }
   private static final DelimiterSet __outputDelimiters = new DelimiterSet((char) 44, (char) 10, (char) 0, (char) 0, false);
   public String toString() {
@@ -307,6 +469,7 @@ this.readFields0(__dataIn);  }
   public String toString(DelimiterSet delimiters, boolean useRecordDelim) {
     StringBuilder __sb = new StringBuilder();
     char fieldDelim = delimiters.getFieldsTerminatedBy();
+<<<<<<< HEAD
     __sb.append(FieldFormatter.escapeAndEnclose(id_canal==null?"null":"" + id_canal, delimiters));
     __sb.append(fieldDelim);
     __sb.append(FieldFormatter.escapeAndEnclose(tipo_canal==null?"null":tipo_canal, delimiters));
@@ -316,12 +479,24 @@ this.readFields0(__dataIn);  }
     __sb.append(FieldFormatter.escapeAndEnclose(disponibilidad==null?"null":disponibilidad.toPlainString(), delimiters));
     __sb.append(fieldDelim);
     __sb.append(FieldFormatter.escapeAndEnclose(numero_errores==null?"null":"" + numero_errores, delimiters));
+=======
+    __sb.append(FieldFormatter.escapeAndEnclose(disponibilidad==null?"null":disponibilidad.toPlainString(), delimiters));
+    __sb.append(fieldDelim);
+    __sb.append(FieldFormatter.escapeAndEnclose(id_canal==null?"null":"" + id_canal, delimiters));
+    __sb.append(fieldDelim);
+    __sb.append(FieldFormatter.escapeAndEnclose(numero_errores==null?"null":"" + numero_errores, delimiters));
+    __sb.append(fieldDelim);
+    __sb.append(FieldFormatter.escapeAndEnclose(tipo_canal==null?"null":tipo_canal, delimiters));
+    __sb.append(fieldDelim);
+    __sb.append(FieldFormatter.escapeAndEnclose(ubicacion==null?"null":ubicacion, delimiters));
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
     if (useRecordDelim) {
       __sb.append(delimiters.getLinesTerminatedBy());
     }
     return __sb.toString();
   }
   public void toString0(DelimiterSet delimiters, StringBuilder __sb, char fieldDelim) {
+<<<<<<< HEAD
     __sb.append(FieldFormatter.escapeAndEnclose(id_canal==null?"null":"" + id_canal, delimiters));
     __sb.append(fieldDelim);
     __sb.append(FieldFormatter.escapeAndEnclose(tipo_canal==null?"null":tipo_canal, delimiters));
@@ -331,6 +506,17 @@ this.readFields0(__dataIn);  }
     __sb.append(FieldFormatter.escapeAndEnclose(disponibilidad==null?"null":disponibilidad.toPlainString(), delimiters));
     __sb.append(fieldDelim);
     __sb.append(FieldFormatter.escapeAndEnclose(numero_errores==null?"null":"" + numero_errores, delimiters));
+=======
+    __sb.append(FieldFormatter.escapeAndEnclose(disponibilidad==null?"null":disponibilidad.toPlainString(), delimiters));
+    __sb.append(fieldDelim);
+    __sb.append(FieldFormatter.escapeAndEnclose(id_canal==null?"null":"" + id_canal, delimiters));
+    __sb.append(fieldDelim);
+    __sb.append(FieldFormatter.escapeAndEnclose(numero_errores==null?"null":"" + numero_errores, delimiters));
+    __sb.append(fieldDelim);
+    __sb.append(FieldFormatter.escapeAndEnclose(tipo_canal==null?"null":tipo_canal, delimiters));
+    __sb.append(fieldDelim);
+    __sb.append(FieldFormatter.escapeAndEnclose(ubicacion==null?"null":ubicacion, delimiters));
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
   }
   private static final DelimiterSet __inputDelimiters = new DelimiterSet((char) 44, (char) 10, (char) 0, (char) 0, false);
   private RecordParser __parser;
@@ -391,6 +577,18 @@ this.readFields0(__dataIn);  }
     } else {
         __cur_str = "null";
     }
+<<<<<<< HEAD
+=======
+    if (__cur_str.equals("null") || __cur_str.length() == 0) { this.disponibilidad = null; } else {
+      this.disponibilidad = new java.math.BigDecimal(__cur_str);
+    }
+
+    if (__it.hasNext()) {
+        __cur_str = __it.next();
+    } else {
+        __cur_str = "null";
+    }
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
     if (__cur_str.equals("null") || __cur_str.length() == 0) { this.id_canal = null; } else {
       this.id_canal = Integer.valueOf(__cur_str);
     }
@@ -400,6 +598,18 @@ this.readFields0(__dataIn);  }
     } else {
         __cur_str = "null";
     }
+<<<<<<< HEAD
+=======
+    if (__cur_str.equals("null") || __cur_str.length() == 0) { this.numero_errores = null; } else {
+      this.numero_errores = Integer.valueOf(__cur_str);
+    }
+
+    if (__it.hasNext()) {
+        __cur_str = __it.next();
+    } else {
+        __cur_str = "null";
+    }
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
     if (__cur_str.equals("null")) { this.tipo_canal = null; } else {
       this.tipo_canal = __cur_str;
     }
@@ -413,6 +623,7 @@ this.readFields0(__dataIn);  }
       this.ubicacion = __cur_str;
     }
 
+<<<<<<< HEAD
     if (__it.hasNext()) {
         __cur_str = __it.next();
     } else {
@@ -431,6 +642,8 @@ this.readFields0(__dataIn);  }
       this.numero_errores = Integer.valueOf(__cur_str);
     }
 
+=======
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
     } catch (RuntimeException e) {    throw new RuntimeException("Can't parse input data: '" + __cur_str + "'", e);    }  }
 
   private void __loadFromFields0(Iterator<String> __it) {
@@ -441,6 +654,18 @@ this.readFields0(__dataIn);  }
     } else {
         __cur_str = "null";
     }
+<<<<<<< HEAD
+=======
+    if (__cur_str.equals("null") || __cur_str.length() == 0) { this.disponibilidad = null; } else {
+      this.disponibilidad = new java.math.BigDecimal(__cur_str);
+    }
+
+    if (__it.hasNext()) {
+        __cur_str = __it.next();
+    } else {
+        __cur_str = "null";
+    }
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
     if (__cur_str.equals("null") || __cur_str.length() == 0) { this.id_canal = null; } else {
       this.id_canal = Integer.valueOf(__cur_str);
     }
@@ -450,6 +675,18 @@ this.readFields0(__dataIn);  }
     } else {
         __cur_str = "null";
     }
+<<<<<<< HEAD
+=======
+    if (__cur_str.equals("null") || __cur_str.length() == 0) { this.numero_errores = null; } else {
+      this.numero_errores = Integer.valueOf(__cur_str);
+    }
+
+    if (__it.hasNext()) {
+        __cur_str = __it.next();
+    } else {
+        __cur_str = "null";
+    }
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
     if (__cur_str.equals("null")) { this.tipo_canal = null; } else {
       this.tipo_canal = __cur_str;
     }
@@ -463,6 +700,7 @@ this.readFields0(__dataIn);  }
       this.ubicacion = __cur_str;
     }
 
+<<<<<<< HEAD
     if (__it.hasNext()) {
         __cur_str = __it.next();
     } else {
@@ -481,6 +719,8 @@ this.readFields0(__dataIn);  }
       this.numero_errores = Integer.valueOf(__cur_str);
     }
 
+=======
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
     } catch (RuntimeException e) {    throw new RuntimeException("Can't parse input data: '" + __cur_str + "'", e);    }  }
 
   public Object clone() throws CloneNotSupportedException {
@@ -493,20 +733,36 @@ this.readFields0(__dataIn);  }
 
   public Map<String, Object> getFieldMap() {
     Map<String, Object> __sqoop$field_map = new HashMap<String, Object>();
+<<<<<<< HEAD
     __sqoop$field_map.put("id_canal", this.id_canal);
     __sqoop$field_map.put("tipo_canal", this.tipo_canal);
     __sqoop$field_map.put("ubicacion", this.ubicacion);
     __sqoop$field_map.put("disponibilidad", this.disponibilidad);
     __sqoop$field_map.put("numero_errores", this.numero_errores);
+=======
+    __sqoop$field_map.put("disponibilidad", this.disponibilidad);
+    __sqoop$field_map.put("id_canal", this.id_canal);
+    __sqoop$field_map.put("numero_errores", this.numero_errores);
+    __sqoop$field_map.put("tipo_canal", this.tipo_canal);
+    __sqoop$field_map.put("ubicacion", this.ubicacion);
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
     return __sqoop$field_map;
   }
 
   public void getFieldMap0(Map<String, Object> __sqoop$field_map) {
+<<<<<<< HEAD
     __sqoop$field_map.put("id_canal", this.id_canal);
     __sqoop$field_map.put("tipo_canal", this.tipo_canal);
     __sqoop$field_map.put("ubicacion", this.ubicacion);
     __sqoop$field_map.put("disponibilidad", this.disponibilidad);
     __sqoop$field_map.put("numero_errores", this.numero_errores);
+=======
+    __sqoop$field_map.put("disponibilidad", this.disponibilidad);
+    __sqoop$field_map.put("id_canal", this.id_canal);
+    __sqoop$field_map.put("numero_errores", this.numero_errores);
+    __sqoop$field_map.put("tipo_canal", this.tipo_canal);
+    __sqoop$field_map.put("ubicacion", this.ubicacion);
+>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3
   }
 
   public void setField(String __fieldName, Object __fieldVal) {

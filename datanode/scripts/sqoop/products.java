@@ -2,7 +2,11 @@
 // WARNING: This class is AUTO-GENERATED. Modify at your own risk.
 //
 // Debug information:
+<<<<<<<< HEAD:datanode/scripts/sqoop/products.java
 // Generated date: Sat Sep 06 01:53:00 UTC 2025
+========
+// Generated date: Fri Jul 17 01:02:02 UTC 2026
+>>>>>>>> c33afd9a2b535eba3c057b6a3454cc32da9cfab3:datanode/products.java
 // For connector: org.apache.sqoop.manager.MySQLManager
 import org.apache.hadoop.io.BytesWritable;
 import org.apache.hadoop.io.Text;
