@@ -26,20 +26,17 @@ MYSQL_PASS="root"
 HIVE_WAREHOUSE="/user/hive/warehouse/cleansed_banco_union.db"
 
 echo ">> Verificando contenido de las tablas CLEANSED en HDFS ..."
-/opt/hadoop-2.7.4/bin/hdfs dfs -ls ${HIVE_WAREHOUSE}/agg_transacciones_diario
-/opt/hadoop-2.7.4/bin/hdfs dfs -ls ${HIVE_WAREHOUSE}/agg_metricas_diario
-/opt/hadoop-2.7.4/bin/hdfs dfs -ls ${HIVE_WAREHOUSE}/agg_correlacion_riesgo_falla
+hdfs dfs -ls ${HIVE_WAREHOUSE}/agg_transacciones_diario
+hdfs dfs -ls ${HIVE_WAREHOUSE}/agg_metricas_diario
 
 # ------------------------------------------------------------
 # Export: agregado de transacciones por canal/día -> MySQL
 # ------------------------------------------------------------
-/usr/local/sqoop/bin/sqoop export \
+sqoop export \
   --connect "jdbc:mysql://${MYSQL_HOST}:${MYSQL_PORT}/${MYSQL_DB}" \
   --username ${MYSQL_USER} \
   --password ${MYSQL_PASS} \
   --table agg_transacciones_diario \
-  --columns fecha,canal_id,tipo_canal,ubicacion,total_transacciones,monto_total,transacciones_fallidas,tasa_fallo_pct \
-  --map-column-java fecha=String \
   --export-dir ${HIVE_WAREHOUSE}/agg_transacciones_diario \
   --input-fields-terminated-by '\001' \
   --input-lines-terminated-by '\n' \
@@ -48,29 +45,12 @@ echo ">> Verificando contenido de las tablas CLEANSED en HDFS ..."
 # ------------------------------------------------------------
 # Export: agregado de métricas por servidor/día -> MySQL
 # ------------------------------------------------------------
-/usr/local/sqoop/bin/sqoop export \
+sqoop export \
   --connect "jdbc:mysql://${MYSQL_HOST}:${MYSQL_PORT}/${MYSQL_DB}" \
   --username ${MYSQL_USER} \
   --password ${MYSQL_PASS} \
   --table agg_metricas_diario \
-  --columns fecha,servidor_id,nombre_servidor,ubicacion,cpu_promedio,cpu_maximo,ram_promedio,disco_promedio,lecturas_criticas,lecturas_advertencia \
-  --map-column-java fecha=String \
   --export-dir ${HIVE_WAREHOUSE}/agg_metricas_diario \
-  --input-fields-terminated-by '\001' \
-  --input-lines-terminated-by '\n' \
-  --num-mappers 1
-
-# ------------------------------------------------------------
-# Export: correlación riesgo de infraestructura vs. fallas -> MySQL
-# ------------------------------------------------------------
-/usr/local/sqoop/bin/sqoop export \
-  --connect "jdbc:mysql://${MYSQL_HOST}:${MYSQL_PORT}/${MYSQL_DB}" \
-  --username ${MYSQL_USER} \
-  --password ${MYSQL_PASS} \
-  --table agg_correlacion_riesgo_falla \
-  --columns fecha,servidor_id,nombre_servidor,cpu_promedio,lecturas_criticas,total_transacciones,transacciones_fallidas,tasa_fallo_pct \
-  --map-column-java fecha=String \
-  --export-dir ${HIVE_WAREHOUSE}/agg_correlacion_riesgo_falla \
   --input-fields-terminated-by '\001' \
   --input-lines-terminated-by '\n' \
   --num-mappers 1

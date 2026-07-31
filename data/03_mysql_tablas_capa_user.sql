@@ -11,7 +11,7 @@ USE bigdata_banco_union;
 
 DROP TABLE IF EXISTS agg_transacciones_diario;
 CREATE TABLE agg_transacciones_diario (
-    fecha                    VARCHAR(10),
+    fecha                    DATE,
     canal_id                 INT,
     tipo_canal               VARCHAR(30),
     ubicacion                VARCHAR(50),
@@ -23,7 +23,7 @@ CREATE TABLE agg_transacciones_diario (
 
 DROP TABLE IF EXISTS agg_metricas_diario;
 CREATE TABLE agg_metricas_diario (
-    fecha                    VARCHAR(10),
+    fecha                    DATE,
     servidor_id              INT,
     nombre_servidor          VARCHAR(50),
     ubicacion                VARCHAR(50),
@@ -33,17 +33,4 @@ CREATE TABLE agg_metricas_diario (
     disco_promedio           DECIMAL(5,2),
     lecturas_criticas        INT,
     lecturas_advertencia     INT
-);
-
-
-DROP TABLE IF EXISTS agg_correlacion_riesgo_falla;
-CREATE TABLE agg_correlacion_riesgo_falla (
-    fecha                    VARCHAR(10),
-    servidor_id              INT,
-    nombre_servidor          VARCHAR(50),
-    cpu_promedio             DECIMAL(5,2),
-    lecturas_criticas        INT,
-    total_transacciones      INT,
-    transacciones_fallidas   INT,
-    tasa_fallo_pct           DECIMAL(5,2)
 );
