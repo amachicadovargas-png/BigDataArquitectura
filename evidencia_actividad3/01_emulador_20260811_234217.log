@@ -1,0 +1,147 @@
+{
+  "event_id": "4c4ccab8-f506-4e29-88cd-4cfd01b4e23a",
+  "event_timestamp": "2026-08-11T23:48:13.520598+00:00",
+  "order_id": 100001,
+  "customer_id": 5001,
+  "customer_fname": "Juliana",
+  "customer_lname": "Ruano",
+  "customer_city": "Toledo",
+  "customer_state": "Córdoba",
+  "order_status": "PROCESANDO",
+  "channel": "MOBILE_APP",
+  "payment_method": "TARJETA_DEBITO",
+  "store_id": 2,
+  "items": [
+    {
+      "product_id": 201,
+      "product_name": "Polera Basica",
+      "category_id": 2,
+      "quantity": 2,
+      "unit_price": 79.0,
+      "subtotal": 158.0
+    },
+    {
+      "product_id": 501,
+      "product_name": "Balon de Futbol",
+      "category_id": 5,
+      "quantity": 1,
+      "unit_price": 129.0,
+      "subtotal": 129.0
+    },
+    {
+      "product_id": 103,
+      "product_name": "Laptop 14 pulgadas",
+      "category_id": 1,
+      "quantity": 3,
+      "unit_price": 4599.0,
+      "subtotal": 13797.0
+    },
+    {
+      "product_id": 402,
+      "product_name": "Lampara LED",
+      "category_id": 4,
+      "quantity": 2,
+      "unit_price": 99.0,
+      "subtotal": 198.0
+    }
+  ],
+  "order_total": 14282.0
+}
+{
+  "event_id": "e3134e93-8382-4508-916c-0ce72a531494",
+  "event_timestamp": "2026-08-11T23:48:13.520806+00:00",
+  "order_id": 100002,
+  "customer_id": 5002,
+  "customer_fname": "Marcelo",
+  "customer_lname": "Valcárcel",
+  "customer_city": "Sevilla",
+  "customer_state": "Santa Cruz de Tenerife",
+  "order_status": "COMPLETO",
+  "channel": "WEB",
+  "payment_method": "EFECTIVO",
+  "store_id": 2,
+  "items": [
+    {
+      "product_id": 101,
+      "product_name": "Smartphone Galaxy",
+      "category_id": 1,
+      "quantity": 2,
+      "unit_price": 1899.0,
+      "subtotal": 3798.0
+    },
+    {
+      "product_id": 201,
+      "product_name": "Polera Basica",
+      "category_id": 2,
+      "quantity": 3,
+      "unit_price": 79.0,
+      "subtotal": 237.0
+    },
+    {
+      "product_id": 301,
+      "product_name": "Zapatillas Running",
+      "category_id": 3,
+      "quantity": 1,
+      "unit_price": 459.0,
+      "subtotal": 459.0
+    },
+    {
+      "product_id": 402,
+      "product_name": "Lampara LED",
+      "category_id": 4,
+      "quantity": 1,
+      "unit_price": 99.0,
+      "subtotal": 99.0
+    }
+  ],
+  "order_total": 4593.0
+}
+{
+  "event_id": "9ff9562c-c3bb-4aac-ba82-97d216221f57",
+  "event_timestamp": "2026-08-11T23:48:13.520923+00:00",
+  "order_id": 100003,
+  "customer_id": 5003,
+  "customer_fname": "Encarnita",
+  "customer_lname": "Blázquez",
+  "customer_city": "Guipúzcoa",
+  "customer_state": "Cádiz",
+  "order_status": "PENDIENTE",
+  "channel": "WEB",
+  "payment_method": "TARJETA_DEBITO",
+  "store_id": 4,
+  "items": [
+    {
+      "product_id": 402,
+      "product_name": "Lampara LED",
+      "category_id": 4,
+      "quantity": 3,
+      "unit_price": 99.0,
+      "subtotal": 297.0
+    },
+    {
+      "product_id": 201,
+      "product_name": "Polera Basica",
+      "category_id": 2,
+      "quantity": 1,
+      "unit_price": 79.0,
+      "subtotal": 79.0
+    },
+    {
+      "product_id": 601,
+      "product_name": "Muneca Interactiva",
+      "category_id": 6,
+      "quantity": 3,
+      "unit_price": 219.0,
+      "subtotal": 657.0
+    },
+    {
+      "product_id": 302,
+      "product_name": "Botines Cuero",
+      "category_id": 3,
+      "quantity": 3,
+      "unit_price": 399.0,
+      "subtotal": 1197.0
+    }
+  ],
+  "order_total": 2230.0
+}

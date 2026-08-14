@@ -1,0 +1,26 @@
+[productor] conectando a broker: kafka:9092
+kafka_producer_orders_stream.py:42: DeprecationWarning: key_serializer does not implement kafka.serializer.Serializer
+  productor = crear_productor(args.broker)
+kafka_producer_orders_stream.py:42: DeprecationWarning: value_serializer does not implement kafka.serializer.Serializer
+  productor = crear_productor(args.broker)
+[productor] enviado order_id=100001 -> topic=retail_orders_stream partition=1 offset=16 total=$9934.0
+[productor] enviado order_id=100002 -> topic=retail_orders_stream partition=2 offset=14 total=$9198.0
+[productor] enviado order_id=100003 -> topic=retail_orders_stream partition=1 offset=17 total=$9297.0
+[productor] enviado order_id=100004 -> topic=retail_orders_stream partition=2 offset=15 total=$7680.0
+[productor] enviado order_id=100005 -> topic=retail_orders_stream partition=2 offset=16 total=$14582.0
+[productor] enviado order_id=100006 -> topic=retail_orders_stream partition=1 offset=18 total=$925.0
+[productor] enviado order_id=100007 -> topic=retail_orders_stream partition=2 offset=17 total=$1163.0
+[productor] enviado order_id=100008 -> topic=retail_orders_stream partition=1 offset=19 total=$9198.0
+[productor] enviado order_id=100009 -> topic=retail_orders_stream partition=0 offset=10 total=$4782.0
+[productor] enviado order_id=100010 -> topic=retail_orders_stream partition=1 offset=20 total=$7323.0
+[productor] enviado order_id=100011 -> topic=retail_orders_stream partition=2 offset=18 total=$329.0
+[productor] enviado order_id=100012 -> topic=retail_orders_stream partition=2 offset=19 total=$1596.0
+[productor] enviado order_id=100013 -> topic=retail_orders_stream partition=1 offset=21 total=$5861.0
+[productor] enviado order_id=100014 -> topic=retail_orders_stream partition=1 offset=22 total=$747.0
+[productor] enviado order_id=100015 -> topic=retail_orders_stream partition=0 offset=11 total=$6733.0
+[productor] enviado order_id=100016 -> topic=retail_orders_stream partition=2 offset=20 total=$1104.0
+[productor] enviado order_id=100017 -> topic=retail_orders_stream partition=0 offset=12 total=$657.0
+[productor] enviado order_id=100018 -> topic=retail_orders_stream partition=0 offset=13 total=$336.0
+[productor] enviado order_id=100019 -> topic=retail_orders_stream partition=0 offset=14 total=$387.0
+[productor] enviado order_id=100020 -> topic=retail_orders_stream partition=1 offset=23 total=$4365.0
+[productor] finalizado. eventos enviados: 20

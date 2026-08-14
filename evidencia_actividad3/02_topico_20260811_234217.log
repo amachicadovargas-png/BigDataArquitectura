@@ -1,0 +1,9 @@
+--- Lista de tópicos ---
+__consumer_offsets
+retail_orders_stream
+
+--- Detalle de retail_orders_stream ---
+Topic: retail_orders_stream	TopicId: tqzwFGFPSQqDvYDpFJkYlA	PartitionCount: 3	ReplicationFactor: 1	Configs: 
+	Topic: retail_orders_stream	Partition: 0	Leader: 1	Replicas: 1	Isr: 1
+	Topic: retail_orders_stream	Partition: 1	Leader: 1	Replicas: 1	Isr: 1
+	Topic: retail_orders_stream	Partition: 2	Leader: 1	Replicas: 1	Isr: 1
