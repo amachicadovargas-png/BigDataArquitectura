@@ -10,7 +10,8 @@ cnx = mysql.connector.connect(
     port=3306,
     user="root",
     password="root",
-    database="retail_db"
+    database="retail_db",
+    autocommit=True
 )
 cursor = cnx.cursor(dictionary=True)
 # ==================================================
